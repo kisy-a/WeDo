@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".BuyerPostProject">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPostProject"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/backToBuyerAcc"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/BuyerAcc_postProject_MainTitle"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+       <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="55dp"
+            android:outlineAmbientShadowColor="@color/grey"
+            android:outlineSpotShadowColor="@color/grey"
+            android:background="@color/light_grey3" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearBtnProPublish"
+        android:layout_below="@+id/linearLayoutPostProject"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/BuyerAcc_postProject_Title"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:hint="@string/BuyerAcc_postProject_TitleDesc"
+                android:paddingStart="12dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/BuyerAcc_postProject_Desc"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/post_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:gravity="top"
+                android:hint="@string/BuyerAcc_postProject_DesSub"
+                android:lineSpacingExtra="3dp"
+                android:paddingStart="12dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="60dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/BuyerAcc_postProject_CategoryTitle"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <RadioGroup
+                android:id="@+id/categoryGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/post_radioHair"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="@string/GraphicTitle"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioVenue"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/TechTitle"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioDress"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/WritingTitle"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioData"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/DataTitle"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioCar"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/VideoTitle"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioCatering"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/MarketingTitle"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioFlower"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Flower Services"
+                    android:textSize="14dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/BuyerAcc_postProject_BudgetTitle"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/post_budget"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:hint="@string/BuyerAcc_postProject_BudgetDesc"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Target Hours"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/post_days"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:hint="Enter Project Target Hours"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Target Date"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/post_date"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:hint="Enter Project Target Date"
+                android:inputType="date"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7E80EC"
+                android:text="Select Date"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Target Time"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/post_time"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:hint="Enter Project Target Time"
+                android:inputType="time"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="#7E80EC"
+                android:text="SELECT TIME"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/BuyerAcc_postProject_StatusTitle"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <RadioGroup
+                android:id="@+id/statusGroup"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <RadioButton
+                    android:id="@+id/post_radioOpen"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="@string/BuyerAcc_postProject_radioOpen"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioClose"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/BuyerAcc_postProject_radioClose"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/post_radioCompleted"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/BuyerAcc_postProject_radioComplete"
+                    android:textSize="14dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearBtnProPublish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_projectPublish"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:backgroundTint="#7E80EC"
+                app:cornerRadius="15dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btn_publish"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

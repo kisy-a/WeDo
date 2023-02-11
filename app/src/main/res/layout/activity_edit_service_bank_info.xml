@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditServiceBankInfo"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEdBank"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/BankEditBackToBankInfo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/Seller_EditServicePost_PageTitle2"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_below="@+id/linearLayoutEdBank"
+        android:layout_above="@id/linearBtnBankSave"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/Seller_ServicePost_BankNameTitle"/>
+
+            <EditText
+                android:id="@+id/edit_bankName"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text=""
+                android:textColorHint="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/Seller_ServicePost_BeneficiaryNameTitle"/>
+
+            <EditText
+                android:id="@+id/edit_beneficialName"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text=""
+                android:textColorHint="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/Seller_ServicePost_AccountNumTitle"/>
+
+            <EditText
+                android:id="@+id/edit_accountNumber"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text=""
+                android:inputType="number"
+                android:textColorHint="@color/grey"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:outlineAmbientShadowColor="@color/grey"
+            android:outlineSpotShadowColor="@color/grey"
+            android:background="@color/light_grey3" />-->
+
+
+
+        <LinearLayout
+            android:id="@+id/linearBtnBankSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp">
+
+
+                <Button
+                    android:id="@+id/btn_editBankSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    app:cornerRadius="15dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:backgroundTint="#7E80EC"
+                    android:textSize="14dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/btn_save"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

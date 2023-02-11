@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wedoapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/wedo_icon"
+        android:label="WeDo"
+        android:roundIcon="@drawable/wedo_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeDo">
+        <activity
+            android:name=".SignUpConditions"
+            android:exported="false" />
+        <activity
+            android:name=".FilterServiceCategory"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReportedUsers"
+            android:exported="false" />
+        <activity
+            android:name=".SellerReportBuyer"
+            android:exported="false" />
+        <activity
+            android:name=".ReportUser"
+            android:exported="false" />
+        <activity
+            android:name=".EditAdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAccount"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceCategoryFlower"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".SellerChatMessage"
+            android:exported="false" />
+        <activity android:name=".AdminBookingTransactionsList" />
+        <activity android:name=".BuyerSupport" />
+        <activity android:name=".SellerTaskCancelList" />
+        <activity android:name=".BuyerOrderCancelList" />
+        <activity android:name=".BuyerCancelOrder" />
+        <activity android:name=".SellerFaq_BPayment" />
+        <activity android:name=".SellerFaq_JobBrowsing" />
+        <activity android:name=".SellerFaq_ManageService" />
+        <activity android:name=".SellerFaq_ServiceListing" />
+        <activity android:name=".BuyerFaq_ManageOrder" />
+        <activity android:name=".BuyerFaq_BPayment" />
+        <activity android:name=".BuyerFaq_ProjectPost" />
+        <activity android:name=".BuyerFaq_BrowseService" />
+        <activity android:name=".BuyerFaq" />
+        <activity android:name=".SellerServiceContactBuyer" />
+        <activity android:name=".SellerTaskStatusDetail" />
+        <activity android:name=".OrderStatusPenDetail" />
+        <activity android:name=".ViewPortfolio" />
+        <activity android:name=".AddSamplePortfolio" />
+        <activity android:name=".BuyerViewFreelancerProfile" />
+        <activity android:name=".JobContact" />
+        <activity android:name=".CustomerTypeActivity" />
+        <activity android:name=".ChatInbox" />
+        <activity android:name=".ChatConversation" />
+        <activity android:name=".ChatMessage" />
+        <activity android:name=".ServiceCategoryCatering"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ServiceCategoryAudioVideo"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ServiceCategoryVenue"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ServiceCategoryCar"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ServiceCategoryDress"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".BankInformation" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".ServiceCategoryHair"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".SellerTaskPendingList" />
+        <activity android:name=".SellerTaskCompletedList" />
+        <activity android:name=".SellerTaskAcceptedList" />
+        <activity android:name=".ManageServiceList" />
+        <activity android:name=".BuyerOrderCompletedList" />
+        <activity android:name=".BuyerOrderInProgressList" />
+        <activity android:name=".BuyerOrderRatedList" />
+        <activity android:name=".BuyerOrderPendingList" />
+        <activity android:name=".SellerViewReview" />
+        <activity android:name=".BuyerViewReview" />
+        <activity android:name=".BrowseJobList" />
+        <activity android:name=".BuyerHome" />
+        <activity android:name=".ManagePostingList" />
+        <activity android:name=".SellerServiceDetails" />
+        <activity android:name=".SellerJobDetails" />
+        <activity android:name=".PaymentStatement" />
+        <activity android:name=".Tasks" />
+        <activity android:name=".SellerAccount" />
+        <activity android:name=".SellerPostServiceBankInfo" />
+        <activity android:name=".SellerPostService" />
+        <activity android:name=".EditServiceBankInfo" />
+        <activity android:name=".EditService" />
+        <activity android:name=".BuyerOrderCheckout" />
+        <activity android:name=".BuyerRateService" />
+        <activity android:name=".BuyerServiceDetail" />
+        <activity android:name=".BuyerProjectDetail" />
+        <activity android:name=".Orders" />
+        <activity android:name=".EditProject" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".EditSellerProfile" />
+        <activity android:name=".BuyerPostProject" />
+        <activity android:name=".BuyerAccount" />
+        <activity android:name=".EmailVerification" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".NotificationMyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".NotificationMyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

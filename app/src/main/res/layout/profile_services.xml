@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="2dp">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="170dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="118dp">
+
+                <ImageView
+                    android:id="@+id/Profile_SerItem_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/service_image" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/Profile_SerItem_Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/BuyerOrderList_serCategory"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/Profile_SerItem_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="2"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/BuyerOrderList_serTitle"
+                android:textColor="@color/black2"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/Profile_SerItem_Price"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/SellerViewJobDetail_JobPriceDesc"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/Profile_SerItem_RatingBarAverage"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_toStartOf="@+id/Profile_SerItem_RatingAverage"
+                        android:numStars="1"
+                        android:layout_alignParentBottom="true"
+                        android:progressTint="@color/yellow"
+
+                        android:secondaryProgressTint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Profile_SerItem_RatingAverage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toStartOf="@+id/Profile_SerItem_TotalRating"
+                        android:text="4.00"
+                        android:textSize="10dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="?android:attr/colorMultiSelectHighlight" />
+
+                    <TextView
+                        android:id="@+id/Profile_SerItem_TotalRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/SellerViewJobDetail_Review"
+                        android:textAlignment="textEnd"
+                        android:textSize="10dp"
+                        android:textColor="@color/grey2" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

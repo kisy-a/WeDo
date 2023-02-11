@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/orderPending_serImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_no_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:paddingStart="5dp"
+            android:layout_marginLeft="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orderPending_serTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="15dp"
+                android:layout_marginLeft="12dp"
+                android:text="@string/BuyerOrderList_serTitle"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/orderPending_serCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:lineSpacingExtra="3dp"
+                android:layout_alignParentTop="true"
+                android:textSize="11dp"
+                android:text="@string/BuyerOrderList_serCategory" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_person" />
+
+                    <TextView
+                        android:id="@+id/orderPending_serSellerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:paddingEnd="18dp"
+                        android:text="@string/BuyerOrderList_clientName"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/duration_large" />
+
+
+                <TextView
+                    android:id="@+id/orderPending_serDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4.1dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:text="@string/BuyerOrderList_serDeliveryTitle" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BuyerOrderList_serStatusTitle"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/orderPending_serStatus"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/BuyerOrderList_serStatus"
+                    android:textAlignment="textStart"
+                    android:textColor="#cf142b"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/orderPending_serPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="23dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_blue2"
+                    android:text="@string/BuyerOrderList_serPriceItem"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_cancelOrder"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="18dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/BuyerOrderList_btn_cancel"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/red"
+                    app:cornerRadius="5dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_grey2"
+            android:backgroundTintMode="src_atop"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

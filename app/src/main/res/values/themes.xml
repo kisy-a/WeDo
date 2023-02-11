@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WeDo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#F5F5F5</item>
+        <item name="colorPrimaryVariant">#8B80F8</item>
+        <item name="colorOnPrimary">#F5F5F5</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#495680</item>
+        <item name="colorSecondaryVariant">#495680</item>
+        <item name="colorOnSecondary">#F5F5F5</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#8B80F8</item>
+
+        <!-- Customize your theme here. -->
+
+        <item name="fontFamily">@font/rubik_regular</item>
+
+    </style>
+    <style name="SplashScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#8B80F8</item>
+    </style>
+</resources>

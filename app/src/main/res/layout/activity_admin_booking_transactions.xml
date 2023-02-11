@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".AdminBookingTransactionsList">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRateSer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/backToAdminHome"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Booking Transaction Report"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:visibility="gone"
+        android:enabled="false"
+        android:id="@+id/GraphicSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutRateSer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/custom_border"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint="Search Services"
+        android:textSize="16dp"
+        android:visible="false" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAdminBookingTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GraphicSearch"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/booking_transactions_list" />
+
+    <LinearLayout
+        android:id="@+id/linearProBtnRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_savePdf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#7E80EC"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:stateListAnimator="@null"
+            app:cornerRadius="15dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="save as pdf" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

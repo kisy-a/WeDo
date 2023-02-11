@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".Tasks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:visibility="gone"
+            android:enabled="false"
+            android:id="@+id/BChatBackToPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/dark_blue2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/rubik_bold"
+                android:paddingStart="17dp"
+                android:text="@string/SellerTasks_PageTitle"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="337dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/wedo_logo_inbox" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        android:backgroundTintMode="src_atop"/>-->
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_taskPending"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_TaskPending"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/pending_100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/icon_TaskPending"
+                android:layout_marginTop="15dp"
+                android:text="@string/SellerTasks_btn_pending"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="355dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_next" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_taskProgress"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_TaskProgress"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/progress_100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/icon_TaskProgress"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/SellerTasks_btn_workInProgress"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="351dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_next" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_taskCompleted"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_TaskComplete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/completed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/SellerTasks_btn_completed"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/icon_TaskComplete"
+                android:layout_centerInParent="true"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="351dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_next" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_taskCancel"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_TaskCancel"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/cancel_100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/SellerTasks_btn_cancelled"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/icon_TaskCancel"
+                android:layout_centerInParent="true"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="351dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Total Earnings: "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/sellerEarnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/title"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/BuyerOrders_count"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/sellerNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_bg_seller"
+            android:elevation="900dp"
+            app:menu="@menu/seller" />
+    </RelativeLayout>
+
+</LinearLayout>

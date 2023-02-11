@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".ChatMessage">
+
+
+        <LinearLayout
+            android:id="@+id/linearHeaderTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg"
+            >
+
+            <ImageButton
+                android:visibility="gone"
+                android:enabled="false"
+                android:id="@+id/BChatBackToPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/dark_blue2"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_arrow_back" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/rubik_bold"
+                    android:paddingStart="17dp"
+                    android:text="@string/ChatPageTitle"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="337dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/wedo_logo_inbox" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_NoMessage"
+        android:layout_width="265dp"
+        android:layout_height="324dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/no_message" />
+
+    <TextView
+        android:id="@+id/tv_NoMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_NoMessage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/Inbox_NoMessage"
+        android:visibility="gone"
+        android:textSize="16dp" />
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:outlineAmbientShadowColor="@color/grey"
+            android:outlineSpotShadowColor="@color/grey"
+            android:background="@color/light_grey3" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearHeaderTop"
+        android:layout_marginTop="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/inbox_list" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buyerNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_bg"
+        android:elevation="900dp"
+        app:menu="@menu/buyer" />
+</RelativeLayout>

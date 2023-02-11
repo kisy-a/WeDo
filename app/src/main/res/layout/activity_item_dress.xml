@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".ServiceCategoryDress">
+
+
+    <LinearLayout
+        android:id="@+id/SWLinearHeaderTop"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/WritingBackToMainServiceList"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/WritingTitle"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Filter"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginStart="100dp"/>
+        <ImageButton
+            android:id="@+id/FilterButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/filter"/>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_NoWService"
+            android:layout_width="250dp"
+            android:layout_height="246dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/no_services" />
+
+        <TextView
+            android:id="@+id/tv_NoWService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_NoWService"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:text="@string/Services_NoService"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_NoWService2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_NoWService"
+            android:layout_centerInParent="true"
+            android:text="@string/Services_NoService2"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:outlineAmbientShadowColor="@color/grey"
+            android:outlineSpotShadowColor="@color/grey"
+            android:background="@color/light_grey3" />-->
+
+
+        <EditText
+            android:id="@+id/WritingSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SWLinearHeaderTop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/custom_border"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="Search Services"
+            android:textSize="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewWritingItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WritingSearch"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/service_item_list_buyer" />
+
+
+</RelativeLayout>

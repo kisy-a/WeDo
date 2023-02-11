@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".AdminHome">
+
+    <LinearLayout
+        android:background="@drawable/top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutBuyerHome">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/wedo_logo_white" />
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/rubik_bold"
+                android:paddingStart="17dp"
+                android:text="@string/app_name"
+                android:textColor="#7E80EC"
+                android:textSize="25dp"
+                app:fontFamily="@font/rubik_bold" />
+
+            <ImageButton
+                android:visibility="gone"
+                android:enabled="false"
+                android:id="@+id/btn_buyer_message"
+                android:layout_width="68dp"
+                android:layout_height="65dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:src="@drawable/ic_inbox" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_userReports"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_orderCancelled"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/cancel_100" />
+
+            <TextView
+                android:id="@+id/reportedUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/icon_orderCancelled"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Reported Users"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userReportsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/reportedUsers"
+                android:text="@string/BuyerOrders_count"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="351dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_next" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_orderComplete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/rated_order" />
+
+            <TextView
+                android:id="@+id/homeContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/icon_orderComplete"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Manage Home Content"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/homeContentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/homeContent"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/BuyerOrders_count"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="351dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_next" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_bookingTransaction"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_orderRated"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/completed" />
+
+            <TextView
+                android:id="@+id/ratedOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/icon_orderRated"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Booking Transaction Reports"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/bookingTransactionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/ratedOrder"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/BuyerOrders_count"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="351dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_next" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/adminNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_bg"
+            android:elevation="900dp"
+            app:menu="@menu/admin" />
+    </RelativeLayout>
+
+</LinearLayout>

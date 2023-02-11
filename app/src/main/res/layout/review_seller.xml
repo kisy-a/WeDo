@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/serReviewHistory_buyerProfileImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_24" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:id="@+id/serReviewHistory_buyerName"
+                android:layout_width="231dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/SellerViewReview_Name"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <RatingBar
+            android:id="@+id/serReviewHistory_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="23dp"
+            android:rating="5"
+            android:progressTint="@color/yellow"
+            android:secondaryProgressTint="@color/white"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/serReviewHistory_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginLeft="52dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/SellerViewReview_Comment"
+            android:textColor="@color/black2"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/serReviewHistory_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:paddingEnd="30dp"
+            android:text="@string/BuyerRateService_Date"
+            android:textColor="@color/grey2"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/light_grey2"
+            android:backgroundTintMode="src_atop"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

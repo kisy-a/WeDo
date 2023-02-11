@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".FilterServiceCategory">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPostProject"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Filters and Sort"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearBtnProPublish"
+        android:layout_below="@+id/linearLayoutPostProject"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sort"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/sortGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/sort_recent"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Recent"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/sort_high_to_low"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Price - High to Low"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/sort_low_to_high"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Price - Low to High"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linearSetPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Minimum Price"
+                        android:textColor="@color/black2"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/filterMinimumPrice"
+                        android:layout_width="120dp"
+                        android:layout_height="58dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_input"
+                        android:hint="PHP"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="-"
+                        android:textColor="@color/black2"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Maximum Price"
+                        android:textColor="@color/black2"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/filterMaximumPrice"
+                        android:layout_width="120dp"
+                        android:layout_height="58dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_input"
+                        android:hint="PHP"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Rating"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/ratingGroup"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <RadioButton
+                    android:id="@+id/filterRadioStar1"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="1 star +"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/filterRadioStar2"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="2 stars +"
+                    android:textSize="14dp" />
+                <RadioButton
+                    android:id="@+id/filterRadioStar3"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="3 stars +"
+                    android:textSize="14dp" />
+                <RadioButton
+                    android:id="@+id/filterRadioStar4"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="4 stars +"
+                    android:textSize="14dp" />
+                <RadioButton
+                    android:id="@+id/filterRadioStar5"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="5 stars +"
+                    android:textSize="14dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearBtnProPublish"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="end"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btn_clearFilter"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#E33973"
+            android:stateListAnimator="@null"
+            android:text="clear"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:id="@+id/btn_applyFilter"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#7E80EC"
+            android:stateListAnimator="@null"
+            android:text="apply"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

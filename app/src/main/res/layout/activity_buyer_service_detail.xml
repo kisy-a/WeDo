@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".BuyerServiceDetail">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetailSer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/SerDetBackToSerList"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+    </LinearLayout>
+
+    <!--<View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="55dp"
+           android:outlineAmbientShadowColor="@color/grey"
+           android:outlineSpotShadowColor="@color/grey"
+           android:background="@color/light_grey3" />-->
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:fillViewport="true"
+       android:layout_below="@+id/linearLayoutDetailSer"
+       android:layout_above="@id/linearBtnBoth"
+       android:scrollbars="none">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="@color/light_grey4">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/buyer_serImage"
+           android:layout_width="match_parent"
+           android:layout_height="280dp"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentEnd="true"
+           android:scaleType="fitXY"
+           android:src="@drawable/service_image" />
+
+   </RelativeLayout>
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="12dp"
+       android:layout_marginTop="9dp"
+       android:layout_marginEnd="12dp"
+       app:cardCornerRadius="10dp"
+       app:cardElevation="0dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:paddingStart="19dp"
+           android:paddingEnd="19dp">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/buyer_serSelleImage"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/profile" />
+
+           <TextView
+               android:id="@+id/buyer_serSellerName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:text="@string/BuyerServiceDetail_SellerNameDesc"
+               android:textSize="14dp"
+               android:textColor="@color/black2"
+               />
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <RatingBar
+                       android:id="@+id/buyer_serRatingBarAverage"
+                       style="@style/Widget.AppCompat.RatingBar.Small"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="3dp"
+                       android:layout_toStartOf="@+id/buyer_serRatingAverage"
+                       android:numStars="1"
+                       android:progressTint="@color/yellow"
+                       android:secondaryProgressTint="@color/white" />
+
+                   <TextView
+                       android:id="@+id/buyer_serRatingAverage"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginStart="2dp"
+                       android:layout_marginTop="2dp"
+                       android:text="@string/review_average"
+                       android:textSize="14dp"
+                       android:textAlignment="textEnd"
+                       android:textColor="?android:attr/colorMultiSelectHighlight" />
+
+               </RelativeLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/buyer_SerTitle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="45dp"
+               android:lineSpacingExtra="3dp"
+               android:paddingStart="19dp"
+               android:paddingEnd="19dp"
+               android:text="@string/BuyerServiceDetail_ServiceTitle"
+               android:textColor="@color/black"
+               android:textSize="21dp"
+               android:textStyle="bold" />
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_marginTop="2dp"
+               android:paddingStart="19dp"
+               android:paddingEnd="19dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="18dp"
+                   android:layout_height="15dp"
+                   android:layout_marginTop="2dp"
+                   android:src="@drawable/duration_large" />
+
+               <TextView
+                   android:id="@+id/buyer_SerDeliveryDays"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:text="@string/BuyerServiceDetail_DeliveryDays"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/red"
+                   android:textSize="14dp" />
+
+           </LinearLayout>
+
+           <com.borjabravo.readmoretextview.ReadMoreTextView
+               android:id="@+id/buyer_SerDesc"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingStart="19dp"
+               android:paddingEnd="19dp"
+               android:layout_marginTop="10dp"
+               android:fontFamily="@font/roboto"
+               android:lineSpacingExtra="3dp"
+               android:text="@string/BuyerServiceDetail_ServiceDesc"
+               android:textColor="@color/black2"
+               app:colorClickableText="@color/blue"
+               app:trimCollapsedText="@string/show_more"
+               app:trimExpandedText="@string/show_less"
+               app:trimLength="180"
+               android:textSize="14dp"
+               app:trimMode="trimModeLength"
+               android:layout_marginBottom="20dp"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:background="@android:color/holo_red_light"
+               android:backgroundTint="#D8E5F8"
+               android:paddingStart="19dp"
+               android:paddingTop="10dp"
+               android:paddingEnd="19dp"
+               android:paddingBottom="10dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:lineSpacingExtra="3dp"
+                   android:text="@string/BuyerServiceDetail_PriceTitle"
+                   android:textColor="@color/black"
+                   android:textSize="21dp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/buyer_serPrice"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/BuyerServiceDetail_PriceDesc"
+                   android:textAlignment="textEnd"
+                   android:textColor="@color/black"
+                   android:textSize="21dp"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="12dp"
+       android:layout_marginTop="13dp"
+       android:layout_marginEnd="12dp"
+       android:layout_marginBottom="10dp"
+       android:foreground="?android:attr/selectableItemBackground"
+       app:cardCornerRadius="10dp"
+       app:cardElevation="0dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:paddingEnd="10dp"
+           android:orientation="horizontal">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="1dp">
+
+           <TextView
+               android:id="@+id/tv_review"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:layout_marginEnd="8dp"
+               android:layout_alignParentStart="true"
+               android:layout_marginTop="15dp"
+               android:text="@string/btn_review"
+               android:textColor="@color/black2"
+               android:layout_centerInParent="true"
+               android:textSize="17dp" />
+
+
+           <TextView
+               android:id="@+id/buyer_serReviewNum"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginEnd="20dp"
+               android:layout_centerVertical="true"
+               android:text="@string/BuyerServiceDetail_RatingNum"
+               android:textColor="@color/black2"
+               android:textSize="16dp"
+               android:layout_toEndOf="@+id/tv_review"/>
+
+           <TextView
+               android:id="@+id/tv_BViewReview"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="View All"
+               android:textColor="@color/dark_blue2"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="27dp"
+               android:textSize="14dp"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="3dp"
+               android:background="@drawable/custom_button" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="14dp"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="360dp"
+               android:layout_marginTop="21dp"
+               android:src="@drawable/ic_arrow_next" />
+
+           </RelativeLayout>
+
+       </LinearLayout>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerViewBuyerReviewMain"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               />
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginEnd="12dp"
+           android:layout_marginBottom="10dp"
+           android:foreground="?android:attr/selectableItemBackground"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="0dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:paddingEnd="10dp"
+                   android:orientation="horizontal">
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="1dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentStart="true"
+                           android:layout_centerInParent="true"
+                           android:layout_marginStart="15dp"
+                           android:layout_marginTop="15dp"
+                           android:text="@string/BuyerServiceDetail_AllServices"
+                           android:textColor="@color/black2"
+                           android:textSize="16dp" />
+
+                       <TextView
+                           android:id="@+id/tv_viewAllServices"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentEnd="true"
+                           android:layout_centerVertical="true"
+                           android:layout_marginStart="3dp"
+                           android:layout_marginEnd="27dp"
+                           android:background="@drawable/custom_button"
+                           android:text="View All"
+                           android:textColor="@color/dark_blue2"
+                           android:textSize="14dp" />
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="14dp"
+                           android:layout_alignParentEnd="true"
+                           android:layout_centerVertical="true"
+                           android:layout_marginStart="360dp"
+                           android:layout_marginTop="21dp"
+                           android:src="@drawable/ic_arrow_next" />
+
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/recyclerViewOtherServices"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginStart="10dp"
+                   tools:listitem="@layout/show_other_services"
+                   app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                   />
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp">
+
+           <TextView
+               android:id="@+id/title_sampleDesign"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/BuyerServiceDetail_SampleDesign"
+               android:textColor="@color/grey2"
+               android:textSize="14dp"/>
+
+           </RelativeLayout>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:layout_marginTop="6dp"
+               android:foreground="?android:attr/selectableItemBackground"
+               app:cardCornerRadius="0dp"
+               app:cardElevation="0dp">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerViewOnServicePortfolio"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="5dp"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               tools:listitem="@layout/service_portfolio"/>
+
+           </androidx.cardview.widget.CardView>
+
+   </LinearLayout>
+
+   </ScrollView>
+
+       <LinearLayout
+           android:id="@+id/linearBtnBoth"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentStart="true">
+
+           <Button
+               android:id="@+id/btn_OrderContact"
+               style="@style/Widget.MaterialComponents.Button.Icon"
+               android:stateListAnimator="@null"
+               android:layout_width="0dp"
+               android:layout_height="60dp"
+               android:layout_weight="1"
+               android:textStyle="bold"
+               android:backgroundTint="#7E80EC"
+               app:cornerRadius="15dp"
+               android:textSize="12dp"
+               android:text="@string/btn_contact"/>
+
+           <View
+               android:layout_width="0dp"
+               android:layout_height="1dp"
+               android:layout_weight="0.05"/>
+
+           <Button
+               android:id="@+id/btn_buy"
+               style="@style/Widget.MaterialComponents.Button.Icon"
+               android:stateListAnimator="@null"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="60dp"
+               android:backgroundTint="#7E80EC"
+               android:text="@string/btn_purchase"
+               android:textStyle="bold"
+               android:textSize="12dp"
+               app:cornerRadius="15dp" />
+
+
+       </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "726492463110",
+    "firebase_url": "https://wedo-b99aa-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "wedo-b99aa",
+    "storage_bucket": "wedo-b99aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726492463110:android:8ef233b667eb9247570387",
+        "android_client_info": {
+          "package_name": "com.example.wedoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726492463110-q7sknem7cm3o0ttcto49q004qjafdk1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRrCewA0dl1rKxq0-AlCfmj4M5LTs6H2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726492463110-q7sknem7cm3o0ttcto49q004qjafdk1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

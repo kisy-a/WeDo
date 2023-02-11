@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".OrderStatusPenDetail">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPostDet"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/PDetailBackToOrderList"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/BuyerOrdersDetail_PageTitle"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="55dp"
+        android:outlineAmbientShadowColor="@color/grey"
+        android:outlineSpotShadowColor="@color/grey"
+        android:background="@color/light_grey3" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_below="@+id/linearLayoutPostDet"
+        android:layout_above="@id/linearProBtnContact"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="19dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="19dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/buyerOrderDetail_NoticePending"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/BuyerOrdersPenDetail_SignalTitle"
+                    android:textColor="@color/black"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/buyerOrderDetail_SignalLogo"
+                    android:layout_width="83dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_toEndOf="@+id/buyerOrderDetail_NoticePending"
+                    android:src="@drawable/ic_waiting_process"
+                    android:text="@string/BuyerServiceDetail_PriceDesc" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="19dp"
+                        android:paddingEnd="19dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/buyerOrderDetail_serSelleImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profile_24" />
+
+                        <TextView
+                            android:id="@+id/buyerOrderDetail_serSellerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_toEndOf="@+id/buyerOrderDetail_serSelleImage"
+                            android:text="@string/BuyerServiceDetail_SellerNameDesc"
+                            android:textColor="@color/black2"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:id="@+id/buyerOrderDetail_viewProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="360dp"
+                            android:layout_marginTop="21dp"
+                            android:layout_centerInParent="true"
+
+                            android:src="@drawable/ic_arrow_next" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:background="@color/light_grey4"
+                        android:backgroundTintMode="src_atop"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/buyerOrderDetailSer_Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="90dip"
+                            android:maxHeight="70dip"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds ="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/service_image" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="2dp">
+
+                            <TextView
+                                android:id="@+id/buyerOrderDetail_SerTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:paddingStart="19dp"
+                                android:paddingEnd="19dp"
+                                android:text="@string/BuyerServiceDetail_ServiceTitle"
+                                android:textColor="@color/black"
+                                android:textSize="14dp" />
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="#D8E5F8"
+                                android:paddingStart="19dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="19dp"
+                                android:paddingBottom="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingExtra="3dp"
+                                    android:text="@string/BuyerServiceDetail_PriceTitle"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/buyerOrderDetail_serPrice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/BuyerServiceDetail_PriceDesc"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#cf142b"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="21dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:paddingEnd="19dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/BuyerOrdersNo"
+                            android:textColor="@color/black2"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/buyerOrderDetail_orderID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="1dp"
+                            android:text="@string/BuyerOrdersNo_Data"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="19dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/BuyerOrdersTime"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/buyerOrderDetail_OrderTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="1dp"
+                            android:text="@string/BuyerOrdersTime_Data"
+                            android:textAlignment="textEnd"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearAcceptedTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="19dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/BuyerOrdersAcceptedTime"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/buyerOrderDetail_AcceptedTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="1dp"
+                            android:text="@string/BuyerOrdersAcceptedTime_Data"
+                            android:textAlignment="textEnd"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearCompletedTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="19dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/BuyerOrdersCompletedTime"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/buyerOrderDetail_CompletedTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="1dp"
+                            android:text="@string/BuyerOrdersCompletedTime_Data"
+                            android:textAlignment="textEnd"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearCancelTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="19dp"
+                        android:layout_marginBottom="4dp"
+                        android:visibility="gone"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/BuyerOrdersCancelTime"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/buyerOrderDetail_CancelTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="1dp"
+                            android:text="@string/BuyerOrdersCancelTime_Data"
+                            android:textAlignment="textEnd"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutReminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="21dp"
+                    android:paddingEnd="21dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:src="@drawable/remind" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/BuyerOrdersReminder"
+                            android:textColor="@color/dark_blue2"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="@string/BuyerOrdersReminder_Data"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="21dp"
+                    android:paddingEnd="21dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/BuyerOrdersReason"
+                        android:textColor="@color/dark_blue2"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ReasonDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="@string/BuyerOrdersReasonDesc"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearProBtnContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/Btn_SellerOrderContact"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#7E80EC"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:stateListAnimator="@null"
+            android:text="@string/btn_contact"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

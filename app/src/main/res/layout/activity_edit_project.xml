@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".EditProject">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEdProject"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/backToProjectDetails"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/editProject"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+       <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="55dp"
+            android:outlineAmbientShadowColor="@color/grey"
+            android:outlineSpotShadowColor="@color/grey"
+            android:background="@color/light_grey3" />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:layout_below="@+id/linearLayoutEdProject"
+            android:layout_above="@id/linearBtnProEd"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/BuyerAcc_postProject_Title"/>
+
+            <EditText
+                android:id="@+id/edit_postTitle"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textColorHint="@color/grey"/>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/BuyerAcc_postProject_Desc"/>
+
+            <EditText
+                android:id="@+id/edit_postDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                android:layout_gravity="center"
+                android:paddingBottom="60dp"
+                android:gravity="top"
+                android:paddingTop="15dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:lineSpacingExtra="3dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textColorHint="@color/grey"/>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/BuyerAcc_postProject_CategoryTitle"/>
+
+            <RadioGroup
+                android:id="@+id/edit_rgCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/edit_radioHair"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="14dp"
+                    android:text="@string/GraphicTitle" />
+
+                <RadioButton
+                    android:id="@+id/edit_radioVenue"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="14dp"
+                    android:text="@string/TechTitle" />
+
+                <RadioButton
+                    android:id="@+id/edit_radioDress"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14dp"
+                    android:text="@string/WritingTitle" />
+
+                <RadioButton
+                    android:id="@+id/edit_radioData"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="14dp"
+                    android:text="@string/DataTitle" />
+
+                <RadioButton
+                    android:id="@+id/edit_radioCar"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="14dp"
+                    android:text="@string/VideoTitle" />
+
+                <RadioButton
+                    android:id="@+id/edit_radioCatering"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14dp"
+                    android:text="@string/MarketingTitle" />
+                <RadioButton
+                    android:id="@+id/edit_radioFlower"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14dp"
+                    android:text="Flower Services" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/BuyerAcc_postProject_BudgetTitle"/>
+
+            <EditText
+                android:id="@+id/edit_postBudget"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="Target Hours"/>
+
+            <EditText
+                android:id="@+id/edit_postDays"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/edit_post_date"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:inputType="date"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7E80EC"
+                android:text="SELECT DATE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Target Time"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edit_post_time"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="15dp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:inputType="time"/>
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7E80EC"
+                android:text="SELECT TIME" />
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="@string/BuyerAcc_postProject_StatusTitle"/>
+
+            <RadioGroup
+                android:id="@+id/edit_rgStatus"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <RadioButton
+                    android:id="@+id/edit_radioOpen"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="14dp"
+                    android:text="@string/BuyerAcc_postProject_radioOpen" />
+
+                <RadioButton
+                    android:id="@+id/edit_radioClose"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="14dp"
+                    android:text="@string/BuyerAcc_postProject_radioClose" />
+
+                <RadioButton
+                    android:id="@+id/edit_radioCompleted"
+                    android:layout_width="180dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="14dp"
+                    android:text="@string/BuyerAcc_postProject_radioComplete" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/linearBtnProEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_projectSave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:textSize="14dp"
+                android:stateListAnimator="@null"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:cornerRadius="15dp"
+                android:backgroundTint="#7E80EC"
+                android:textStyle="bold"
+                android:text="@string/btn_save"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

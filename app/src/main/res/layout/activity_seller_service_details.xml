@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".SellerServiceDetails">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetailSerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/DetailBackToSerList"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/SellerSerDetail_PageTitle"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="55dp"
+            android:outlineAmbientShadowColor="@color/grey"
+            android:outlineSpotShadowColor="@color/grey"
+            android:background="@color/light_grey3" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_below="@+id/linearLayoutDetailSerHistory"
+        android:layout_above="@id/linearBtnBothServ"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/serImage"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_no_image" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="22dp"
+            android:layout_marginTop="5dp"
+            android:paddingEnd="22dp">
+
+            <TextView
+                android:id="@+id/serTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/BuyerServiceDetail_ServiceTitle"/>
+
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/serDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/SellerSerDetail_SerDesc"
+                android:lineSpacingExtra="3dp"
+                app:trimExpandedText="@string/show_less"
+                app:trimCollapsedText="@string/show_more"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                app:trimMode="trimModeLength"
+                android:fontFamily="@font/roboto"
+                app:trimLength="230"
+                app:colorClickableText="@color/blue"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/category_large" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginLeft="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="@string/SellerSerDetail_SerCatTitle" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/serCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="14dp"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/black2"
+                    android:text="@string/SellerSerDetail_SerCatItem" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/peso_symbol_34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginStart="16dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="@string/SellerSerDetail_SerPriceTitle"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/serPrice"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginLeft="35dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black2"
+                    android:textSize="14dp"
+                    android:text="@string/SellerSerDetail_SerPriceUnit" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/duration_large" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="@string/SellerSerDetail_SerDeliveryTitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/serDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black2"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginStart="35dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="14dp"
+                        android:text="@string/SellerSerDetail_SerDeliveryDaysUnit" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearBtnBothServ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/btn_serEdit"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_edit"
+                    android:backgroundTint="#7E80EC"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:stateListAnimator="@null"
+                    app:cornerRadius="15dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.05"/>
+
+                <Button
+                    android:id="@+id/btn_serDelete"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:stateListAnimator="@null"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#7E80EC"
+                    android:textSize="14dp"
+                    android:text="@string/btn_delete"
+                    android:textStyle="bold"
+                    app:cornerRadius="15dp" />
+            </LinearLayout>
+
+
+</RelativeLayout>

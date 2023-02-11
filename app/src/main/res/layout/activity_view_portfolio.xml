@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewPortfolio">
+
+    <LinearLayout
+        android:id="@+id/linearHeaderTop"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/PortfolioBackToList"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/ManageService_ViewSampleDesign"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="55dp"
+        android:outlineAmbientShadowColor="@color/grey"
+        android:outlineSpotShadowColor="@color/grey"
+        android:background="@color/light_grey3" />-->
+
+   <!-- <ImageView
+        android:id="@+id/iv_NoDesignNotice"
+        android:layout_width="368dp"
+        android:layout_height="206dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image" />-->
+
+    <ImageView
+        android:id="@+id/iv_NoDesignNotice"
+        android:layout_width="361dp"
+        android:layout_height="213dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/tv_NoDesignNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="16dp"
+        android:layout_below="@+id/iv_NoDesignNotice"
+        android:text="@string/Portfolio_NoDesign" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPortfolioDesignListed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearHeaderTop"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/portfolio_sample_view" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FButtonAdd_Portfolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/white"
+            app:fabSize="normal"
+            app:elevation="0dp"
+            android:src="@android:drawable/ic_input_add" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

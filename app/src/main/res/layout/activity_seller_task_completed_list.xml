@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".SellerTaskCompletedList">
+
+    <LinearLayout
+        android:id="@+id/TCLinearHeaderTop"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/CompletedBackToMyTask"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/CompleteList_PageTitle"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_NoCTask"
+            android:layout_width="375dp"
+            android:layout_height="183dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/no_task" />
+
+        <TextView
+            android:id="@+id/tv_NoCTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_NoCTask"
+            android:layout_centerInParent="true"
+            android:text="@string/Task_NoCOrder"
+            android:visibility="gone"
+            android:textSize="16dp" />
+
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:outlineAmbientShadowColor="@color/grey"
+        android:outlineSpotShadowColor="@color/grey"
+        android:background="@color/light_grey3" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSellerCompletedList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TCLinearHeaderTop"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/completed_list_seller" />
+
+
+</RelativeLayout>

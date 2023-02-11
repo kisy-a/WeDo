@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/amarante</item>
+        <item>@font/candal</item>
+        <item>@font/catamaran</item>
+        <item>@font/changa_one</item>
+        <item>@font/galada</item>
+        <item>@font/hind_guntur</item>
+        <item>@font/hind_siliguri</item>
+        <item>@font/lalezar</item>
+        <item>@font/meera_inimai</item>
+        <item>@font/metrophobic</item>
+        <item>@font/playfair_display</item>
+        <item>@font/roboto</item>
+    </array>
+</resources>

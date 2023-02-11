@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/rubik_regular"
+    android:background="#F5F5F5"
+    tools:context=".BuyerOrderCheckout">
+
+    <LinearLayout
+        android:id="@+id/linearCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/CheckoutBackToSerDetail"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_bg"
+            android:src="@drawable/back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/BuyerCheckout_PageTitle"
+            android:textColor="#495680"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="55dp"
+        android:outlineAmbientShadowColor="@color/grey"
+        android:outlineSpotShadowColor="@color/grey"
+        android:background="@color/light_grey3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearProBtnConfirm"
+        android:layout_below="@+id/linearCheckout"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey4"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/holo_red_light"
+                    android:backgroundTint="#FFFFFF"
+                    android:paddingStart="19dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="19dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="@string/BuyerCheckout_BuyerNameTitle"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black2"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/orderSum_buyerName"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="@string/BuyerCheckout_BuyerNameDesc"
+                        android:textColor="@color/black2"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="19dp"
+                        android:paddingEnd="19dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/orderSum_serSelleImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profile_24" />
+
+                        <TextView
+                            android:id="@+id/orderSum_serSellerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_toEndOf="@+id/orderSum_serSelleImage"
+                            android:fontFamily="@font/rubik_regular"
+                            android:text="@string/BuyerServiceDetail_SellerNameDesc"
+                            android:textColor="@color/black2"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/light_grey3"
+                        android:backgroundTintMode="src_atop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/orderSum_serImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="2dp"
+                            android:adjustViewBounds="true"
+                            android:maxWidth="90dip"
+                            android:maxHeight="70dip"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/service_image" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/orderSum_serTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:paddingStart="19dp"
+                                android:paddingEnd="19dp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:text="@string/BuyerCheckout_ServiceTitle"
+                                android:textColor="@color/black"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Target Date"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/post_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_input"
+                        android:hint="Enter Project Target Date"
+                        android:inputType="date"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btn_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7E80EC"
+                        app:cornerRadius="15dp"
+                        android:text="Select Date" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Target Time"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/post_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_input"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:hint="Enter Project Target Time"
+                        android:textSize="15dp"
+                        android:textColorHint="@color/grey"
+                        android:textColor="@color/black"
+                        android:inputType="time"/>
+
+                    <Button
+                        android:id="@+id/btn_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:cornerRadius="15dp"
+                        android:backgroundTint="#7E80EC"
+                        android:text="SELECT TIME" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:backgroundTint="#FFFFFF"
+                        android:paddingStart="19dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="19dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_bold"
+                            android:text="@string/BuyerCheckout_PaymentTitle"
+                            android:textColor="@color/black2"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/light_grey3"
+                        android:backgroundTintMode="src_atop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginBottom="13dp"
+                        android:orientation="horizontal">
+
+
+                        <RadioGroup
+                            android:id="@+id/btn_bankGrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/orderSum_radioOnlineBank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:checked="true"
+                                android:fontFamily="@font/rubik_regular"
+                                android:text="@string/BuyerCheckout_payment_radioOnlineBanking"
+                                android:textColor="@color/black"
+                                android:textSize="14dp" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:backgroundTint="#F8EBD8"
+                        android:paddingStart="19dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="19dp"
+                        android:paddingBottom="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/bank"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/gcash_logo" />
+
+                            <TextView
+                                android:id="@+id/text_bank2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/bank"
+                                android:fontFamily="@font/rubik_bold"
+                                android:text="@string/BuyerCheckout_BankAccountTitle"
+                                android:textColor="@color/black2"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/orderSum_sellerId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/text_bank2"
+                                android:text=""
+                                android:textColor="@color/black2"
+                                android:textSize="1dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/orderSum_bankOwner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/rubik_regular"
+                            android:text="@string/BuyerCheckout_BankAccountOwnerName"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/orderSum_bankNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/rubik_regular"
+                            android:text="@string/BuyerCheckout_BankAccountNumber"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/light_grey3"
+                        android:backgroundTintMode="src_atop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@android:color/holo_red_light"
+                        android:backgroundTint="#FFFFFF"
+                        android:orientation="vertical"
+                        android:paddingStart="19dp"
+                        android:paddingEnd="19dp"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/BuyerCheckout_PaymentStatementTitle"
+                            android:textColor="@color/black2"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="3dp"
+                            android:lineSpacingExtra="3dp"
+                            android:text="@string/BuyerCheckout_PaymentStatementDesc"
+                            android:textColor="#cf142b"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/btn_chooseFile"
+                            style="@style/Widget.MaterialComponents.Button.Icon"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/light_grey2"
+                            android:stateListAnimator="@null"
+                            android:text="CHOOSE FILES"
+                            android:textColor="@color/black"
+                            android:textSize="8dp"
+                            android:textStyle="bold"
+                            app:cornerRadius="2dp" />
+
+                        <TextView
+                            android:id="@+id/image_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text=""
+                            android:textColor="@color/black2"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/linearProBtnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:layout_toStartOf="@+id/orderSum_price"
+            android:text="@string/BuyerCheckout_OrderSummaryDesc"
+            android:textAlignment="textEnd"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/orderSum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toStartOf="@+id/btn_purchaseConfirm"
+            android:fontFamily="@font/rubik_bold"
+            android:text="@string/BuyerCheckout_OrderSummaryPrice"
+            android:textAlignment="textEnd"
+            android:textColor="#cf142b"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_purchaseConfirm"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="181dp"
+            android:layout_height="63dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:stateListAnimator="@null"
+            android:backgroundTint="#7E80EC"
+            android:text="@string/btn_confirm"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

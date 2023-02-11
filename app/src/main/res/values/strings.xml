@@ -1,0 +1,859 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">WeDo</string>
+
+
+    <string name="login_email">Email Address</string>
+    <string name="login_password">Password</string>
+    <string name="login_FPassword">Forgot Password?</string>
+    <string name="btn_login">LOG IN</string>
+
+    <string name="reset_emailHint">Enter Your Email Address</string>
+    <string name="reset_info">The confirmation link will be sent to your email.</string>
+    <string name="reset_MainTitle">RESET PASSWORD</string>
+    <string name="btn_reset">RESET</string>
+
+    <string name="SignUp">Create Profile</string>
+    <string name="SignUp_FullName">Full Name</string>
+    <string name="SignUp_FullNameHint">Enter Full Name</string>
+    <string name="SignUp_Email">Email Address</string>
+    <string name="SignUp_EmailHint">Enter Email Address (Required for Verification)</string>
+    <string name="SignUp_PhoneContact">Phone Contact</string>
+    <string name="SignUp_PhoneContactHint">Enter Phone Contact</string>
+    <string name="SignUp_Location">Location (City,State)</string>
+    <string name="SignUp_LocationHint">Enter Location (Eg: Tondo, Manila)</string>
+    <string name="SignUp_Password">Password</string>
+    <string name="SignUp_PasswordHint">Enter Password</string>
+    <string name="SignUp_ConfirmPassword">Confirm Password</string>
+    <string name="SignUp_ConfirmPasswordHint">Enter Confirm Password</string>
+    <string name="btn_signUp">SIGN UP</string>
+
+
+    <string name="BuyerHomeTitle">CATEGORY</string>
+    <string name="BuyerHomeTitle2">RECENTLY VIEWED</string>
+    <string name="BuyerHomeTitle3">LOWEST PRICE</string>
+    <string name="GraphicTitle">Hair and Makeup</string>
+    <string name="WritingTitle">Dress Tailoring</string>
+    <string name="VideoTitle">Car Rental</string>
+    <string name="TechTitle">Venue</string>
+    <string name="DataTitle">Audio/Video</string>
+    <string name="MarketingTitle">Catering Services</string>
+
+    <string name="BuyerAcc_Title_Profile">ACCOUNT</string>
+    <string name="BuyerAcc_Title_Project">MY PROJECT</string>
+    <string name="BuyerAcc_Title_General">GENERAL</string>
+
+    <string name="BuyerAcc_btn_editProfile">Edit Profile</string>
+    <string name="BuyerAcc_btn_addPostings">Post Project</string>
+    <string name="BuyerAcc_btn_managePostings">Manage Postings</string>
+    <string name="BuyerAcc_btn_switchUser">Switch to Seller</string>
+    <string name="BuyerAcc_btn_faq">FAQs</string>
+    <string name="BuyerAcc_btn_support">Support</string>
+    <string name="BuyerAcc_btn_logout">Logout</string>
+
+    <string name="BuyerAcc_postProject_MainTitle">Post a Project</string>
+    <string name="BuyerAcc_postProject_Title">Title </string>
+    <string name="BuyerAcc_postProject_TitleDesc">Enter Project Title</string>
+    <string name="BuyerAcc_postProject_Desc">Description</string>
+    <string name="BuyerAcc_postProject_DesSub">Enter Project Description</string>
+    <string name="BuyerAcc_postProject_CategoryTitle">Category</string>
+    <string name="BuyerAcc_postProject_BudgetTitle">Budget (PHP)</string>
+    <string name="BuyerAcc_postProject_BudgetDesc">Enter Project Budget</string>
+    <string name="BuyerAcc_postProject_DeliveryDaysTitle">Target Date</string>
+    <string name="BuyerAcc_postProject_DeliveryDaysDesc">Enter Project Target Date</string>
+    <string name="BuyerAcc_postProject_StatusTitle">Status</string>
+
+    <string name="BuyerAcc_postProject_radioOpen">Open</string>
+    <string name="BuyerAcc_postProject_radioClose">Closed</string>
+    <string name="BuyerAcc_postProject_radioComplete">Completed</string>
+    <string name="btn_publish">PUBLISH</string>
+
+    <string name="editProfile">Edit Profile</string>
+    <string name="editProject">Edit Project</string>
+    <string name="btn_save">Save</string>
+
+    <string name="BuyerOrders_PageTitle">Orders</string>
+    <string name="BuyerOrders_btn_pending">Pending</string>
+    <string name="BuyerOrders_btn_workInProgress">Work in Progress</string>
+    <string name="BuyerOrders_btn_completed">Completed</string>
+    <string name="BuyerOrders_btn_rated">Rated</string>
+    <string name="BuyerOrders_btn_cancelled">Cancelled</string>
+    <string name="BuyerOrders_count">(Num)</string>
+
+    <string name="BuyerOrdersDetail_PageTitle">Order Details</string>
+    <string name="BuyerOrdersPenDetail_SignalTitle">Waiting For Processing</string>
+    <string name="SellerTaskPenDetail_SignalTitle">To Accept</string>
+    <string name="BuyerOrdersProgressDetail_SignalTitle">In Progress</string>
+    <string name="BuyerOrdersCompDetail_SignalTitle">Completed</string>
+    <string name="BuyerOrdersRatedDetail_SignalTitle">Rated</string>
+    <string name="BuyerOrdersCancelDetail_SignalTitle">Cancelled</string>
+    <string name="BuyerOrdersNo">Order No.</string>
+    <string name="BuyerOrdersNo_Data">No</string>
+    <string name="BuyerOrdersTime">Order Time</string>
+    <string name="BuyerOrdersTime_Data">Date Time</string>
+    <string name="BuyerOrdersAcceptedTime">Accepted Time</string>
+    <string name="BuyerOrdersAcceptedTime_Data">Date Time</string>
+    <string name="BuyerOrdersCompletedTime">Completed Time</string>
+    <string name="BuyerOrdersCompletedTime_Data">Date Time</string>
+    <string name="BuyerOrdersRatedTime">Rated Time</string>
+    <string name="BuyerOrdersRatedTime_Data">Date Time</string>
+    <string name="BuyerOrdersCancelTime">Cancelled Time</string>
+    <string name="BuyerOrdersCancelTime_Data">Date Time</string>
+    <string name="BuyerOrdersReminder">Reminder</string>
+    <string name="BuyerOrdersReminder_Data">If you have paid for your order, please send a message to the service provider so that payment can be verified and your order can be processed.</string>
+    <string name="SellerReminder_Data">Kindly check the payment and proceed the order.</string>
+    <string name="BuyerOrdersReason">Cancellation Reason</string>
+    <string name="BuyerOrdersReasonDesc">Description</string>
+
+    <string name="BuyerProjectDetail_PageTitle">View Project Details</string>
+    <string name="BuyerProjectDetail_ProjectTitle">Project Name</string>
+    <string name="BuyerProjectDetail_ProjectDesc">Description</string>
+    <string name="BuyerProjectDetail_ProjectCatItem">Type of Project</string>
+    <string name="BuyerProjectDetail_ProjectBudgetTitle">Budget</string>
+    <string name="BuyerProjectDetail_ProjectBudgetUnit">PHP </string>
+    <string name="BuyerProjectDetail_ProjectDeliveryTitle">Target Date</string>
+    <string name="BuyerProjectDetail_ProjectDeliveryDays">X</string>
+    <string name="BuyerProjectDetail_ProjectDeliveryDaysUnit">Days</string>
+    <string name="BuyerProjectDetail_ProjectStatusTitle">Job Status</string>
+    <string name="BuyerProjectDetail_ProjectStatusDesc">Status</string>
+
+    <string name="btn_edit">EDIT</string>
+    <string name="btn_delete">DELETE</string>
+
+    <string name="BuyerCancelOrder_PageTitle">Cancel Order</string>
+    <string name="BuyerCancelOrder_ReasonTitle">Reason</string>
+    <string name="BuyerCancelOrder_ReasonDesc">Please mention your reasonable reason for cancelling the order.</string>
+
+    <string name="BuyerRateService_PageTitle">Rate Service</string>
+    <string name="BuyerRateService_Date">DD-MM-YY HH:MM</string>
+    <string name="BuyerRateService_OrderIDTitle">Order ID:</string>
+    <string name="BuyerRateService_Id">111002125</string>
+    <string name="BuyerRateService_ServiceTitle">Hair and Makeup Services</string>
+    <string name="BuyerRateService_CommentTitle">Comments</string>
+    <string name="BuyerRateService_CommentDesc">Share your review and help others to make better choice!</string>
+
+    <string name="btn_submit">SUBMIT</string>
+
+
+    <string name="BankInfo_Title">Reminder:</string>
+    <string name="BankInfo_Desc">Only one Gcash account can be added.</string>
+    <string name="btn_addBankInfo">Add Gcash Account</string>
+    <string name="btn_manageBankInfo">Edit Account</string>
+    <string name="btn_add">ADD</string>
+
+    <string name="BuyerServiceDetail_SellerNameDesc">User Name</string>
+    <string name="BuyerServiceDetail_DeliveryDays">Delivery Hours</string>
+    <string name="BuyerServiceDetail_ServiceTitle">Service Title</string>
+    <string name="BuyerServiceDetail_ServiceDesc">Description</string>
+    <string name="BuyerServiceDetail_PriceTitle">Price</string>
+    <string name="BuyerServiceDetail_PriceDesc">PHP</string>
+    <string name="BuyerServiceDetail_RatingNum">(Num)</string>
+    <string name="BuyerServiceDetail_AllServices">Other Services</string>
+
+    <string name="BuyerServiceDetail_SampleDesign">— Sample Design —</string>
+    <string name="BuyerServiceDetail_NoDesignPreview">No Preview Available</string>
+
+    <string name="btn_review">Reviews</string>
+    <string name="btn_contact">CONTACT</string>
+    <string name="btn_purchase">BOOK</string>
+
+    <string name="review_average">No Rating</string>
+
+    <string name="show_more">&#160;Show More</string>
+    <string name="show_less">&#160;Show Less</string>
+
+    <string name="BuyerCheckout_PageTitle">Order Checkout</string>
+    <string name="BuyerCheckout_ServiceTitle">Service Title</string>
+
+    <string name="BuyerCheckout_BuyerNameTitle">Buyer Name:</string>
+    <string name="BuyerCheckout_BuyerNameDesc">User Name</string>
+    <string name="BuyerCheckout_BankAccountTitle">GCash Information (Seller)</string>
+    <string name="BuyerCheckout_BankAccountOwnerName">Account Name</string>
+    <string name="BuyerCheckout_BankAccountNumber">Account Number</string>
+    <string name="BuyerCheckout_PaymentTitle">Payment</string>
+    <string name="BuyerCheckout_payment_radioOnlineBanking">GCash</string>
+    <string name="BuyerCheckout_PaymentStatementTitle">Payment Receipt (Image File)</string>
+    <string name="BuyerCheckout_PaymentStatementDesc">Please upload your transaction receipt. Thank you.</string>
+    <string name="BuyerCheckout_OrderSummaryDesc">Total:</string>
+    <string name="BuyerCheckout_OrderSummaryPrice">Price</string>
+
+    <string name="btn_confirm">CONFIRM</string>
+
+    <string name="Seller_ServicePost_PageTitle">Post a Service</string>
+    <string name="Seller_ServicePost_Title">Title</string>
+    <string name="Seller_ServicePost_TitleDesc">Enter Service Title</string>
+    <string name="Seller_ServicePost_Desc">Description</string>
+    <string name="Seller_ServicePost_DesSub">Enter Service Information.
+    Eg: What kind of services included in this package?</string>
+    <string name="Seller_ServicePost_CategoryTitle">Category</string>
+    <string name="Seller_ServicePost_SubCategoryTitle">Sub-Category</string>
+    <string name="Seller_ServicePost_PriceTitle">Price (PHP)</string>
+    <string name="Seller_ServicePost_PriceDesc">Enter Service Price</string>
+    <string name="Seller_ServicePost_DeliveryDaysTitle">Delivery Hours</string>
+    <string name="Seller_ServicePost_DeliveryDaysDesc">Enter Service Delivery Hours</string>
+    <string name="Seller_ServicePost_ImageUpload">Upload Cover Image</string>
+
+    <string name="Seller_ServicePost_MainTitle2">Bank Information (Payment Method)</string>
+    <string name="Seller_ServicePost_BankNameTitle">Bank Name</string>
+    <string name="Seller_ServicePost_BankNameDesc">Enter Bank Name (Eg: Gcash)</string>
+    <string name="Seller_ServicePost_BeneficiaryNameTitle">Account Name</string>
+    <string name="Seller_ServicePost_BeneficiaryNameDesc">Enter Account Name</string>
+    <string name="Seller_ServicePost_AccountNumTitle">Account Number</string>
+    <string name="Seller_ServicePost_AccountNumDesc">Enter Bank Account Number</string>
+
+    <string name="Seller_EditServicePost_PageTitle">Edit Service</string>
+    <string name="Seller_EditServicePost_PageTitle2">Edit Gcash Information</string>
+
+    <string name="Seller_AvgRating">Average Rating</string>
+
+    <string name="Seller_btn_service">MY SERVICE</string>
+    <string name="Seller_btn_payment">PAYMENT</string>
+    <string name="Seller_btn_bankInfo">Gcash Information</string>
+    <string name="Seller_btn_addService">Add Services</string>
+    <string name="Seller_btn_manageService">Manage Services</string>
+    <string name="Seller_btn_switchUser">Switch to Buyer</string>
+    <string name="Seller_btn_logout">Logout</string>
+
+    <string name="BuyerOrdersDetail_TaskTitle">Task Details</string>
+
+    <string name="SellerTasks_PageTitle">Tasks</string>
+    <string name="SellerTasks_btn_pending">Pending</string>
+    <string name="SellerTasks_btn_workInProgress">Work in Progress</string>
+    <string name="SellerTasks_btn_completed">Completed</string>
+    <string name="SellerTasks_btn_cancelled">Cancelled</string>
+
+    <string name="SellerViewJobDetail_PageTitle">View Job Details</string>
+    <string name="SellerViewJobDetail_JobPriceUnit">PHP </string>
+    <string name="SellerViewJobDetail_JobPriceDesc">Price</string>
+    <string name="SellerViewJobDetail_JobDeliveryTitle">Delivery Hours</string>
+    <string name="SellerViewJobDetail_JobDeliveryDaysUnit">Days</string>
+    <string name="SellerViewJobDetail_Review">(Num)</string>
+
+    <string name="SellerViewJobDetail_AboutClientTitle">About Client</string>
+
+    <string name="SellerViewPayment_PageTitle">Payment Statement</string>
+
+    <string name="SellerSerDetail_PageTitle">View Service Details</string>
+    <string name="SellerSerDetail_SerDesc">Description</string>
+    <string name="SellerSerDetail_SerCatTitle">Category</string>
+    <string name="SellerSerDetail_SerCatItem">Graphics &amp; Design </string>
+    <string name="SellerSerDetail_SerPriceTitle">Price</string>
+    <string name="SellerSerDetail_SerPriceUnit">PHP</string>
+    <string name="SellerSerDetail_SerPriceItem">Value</string>
+    <string name="SellerSerDetail_SerDeliveryTitle">Delivery Hours</string>
+    <string name="SellerSerDetail_SerDeliveryDaysUnit">Days</string>
+
+    <string name="BuyerManagePosting_PageTitle">Manage Postings</string>
+    <string name="BuyerManagePosting_JobTitle">Videographer and Photographer</string>
+    <string name="BuyerManagePosting_JobStatus">Open</string>
+    <string name="BuyerManagePosting_JobDesc">I am looking for a team that has a creative idea for my prenup shoot.</string>
+
+    <string name="BuyerViewReview_PageTitle">Review</string>
+    <string name="BuyerViewReview_Name">User Name</string>
+    <string name="BuyerViewReview_Comment">Comment</string>
+
+    <string name="SellerViewReview_PageTitle">Review</string>
+    <string name="SellerViewReview_Name">User Name</string>
+    <string name="SellerViewReview_Comment">Comment</string>
+
+    <string name="PendingList_PageTitle">Pending</string>
+    <string name="SellerWorkProgressList_PageTitle">Work in Progress (Accepted)</string>
+    <string name="CompleteList_PageTitle">Completed</string>
+
+    <string name="BuyerOrderList_serTitle">Service Name</string>
+    <string name="BuyerOrderList_serCategory">Category </string>
+    <string name="BuyerOrderList_serDeliveryTitle">Booking Date</string>
+    <string name="BuyerOrderList_serStatusTitle">Status: </string>
+    <string name="BuyerOrderList_serStatus">Pending</string>
+    <string name="BuyerOrderList_serStatus2">In Progress</string>
+    <string name="BuyerOrderList_serStatus3">Completed</string>
+    <string name="BuyerOrderList_serStatus4">Rated</string>
+    <string name="BuyerOrderList_serStatus5">Cancelled</string>
+    <string name="BuyerOrderList_serPriceItem">Price</string>
+    <string name="BuyerOrderList_clientName">Seller Name</string>
+
+    <string name="BuyerOrderList_btn_cancel">Cancel</string>
+    <string name="BuyerOrderList_btn_complete">Completed</string>
+    <string name="BuyerOrderList_btn_rate">Rate</string>
+
+    <string name="ManageService_PageTitle">Manage Services</string>
+    <string name="ManageService_serTitle">Service Title</string>
+    <string name="ManageService_serCategory">Category</string>
+    <string name="ManageService_serPriceItem">Price</string>
+    <string name="ManageService_AddSampleDesign">Add Sample Portfolio</string>
+    <string name="ManageService_ViewSampleDesign">Sample Portfolio</string>
+    <string name="ManageService_NoDesign">No Preview Found</string>
+
+    <string name="ManageService_btn_AddPortfolio">Add</string>
+    <string name="ManageService_btn_UploadPortfolio">Upload</string>
+    <string name="ManageService_btn_Portfolio">PORTFOLIO</string>
+    <string name="ManageService_btn_viewReview">REVIEW</string>
+
+    <string name="SellerTaskList_serStatusTitle">Status: </string>
+    <string name="SellerTaskList_serStatus">Pending</string>
+    <string name="SellerTaskList_serStatus2">In Progress</string>
+    <string name="SellerTaskList_serStatus3">Completed</string>
+    <string name="SellerTaskList_serStatus4">Cancelled</string>
+    <string name="SellerTaskList_serPriceItem">Price</string>
+    <string name="SellerTaskList_clientTitle">Buyer: </string>
+    <string name="SellerTaskList_clientName">User Name</string>
+
+    <string name="SellerTaskList_btn_viewPayment">VIEW PAYMENT</string>
+    <string name="SellerTaskList_btn_accepted">ACCEPTED</string>
+
+    <string name="ChatPageTitle">Inbox</string>
+    <string name="ChatPage_SMessage">Sender Message</string>
+    <string name="ChatPage_RMessage">Receiver Message</string>
+    <string name="DayTime">DD-MM-YY HH:MM</string>
+    <string name="ChatPage_UserName">User Name</string>
+    <string name="ChatPage_Status">Online Status</string>
+
+    <string name="Inbox_NoMessage">No Conversation Found.</string>
+    <string name="Inbox_NoPOrder">There is no pending order.</string>
+    <string name="Inbox_NoIPOrder">There is no progressing order.</string>
+    <string name="Inbox_NoCOrder">There is no completed order.</string>
+    <string name="Inbox_NoROrder">There is no rated order.</string>
+    <string name="Inbox_NoCancelOrder">There is no cancelled order.</string>
+    <string name="Manage_NoPosting">No Project Found.</string>
+
+    <string name="Task_NoPOrder">There is no pending task.</string>
+    <string name="Task_NoIPOrder">There is no progressing task.</string>
+    <string name="Task_NoCOrder">There is no completed task.</string>
+    <string name="Task_NoCllOrder">There is no cancelled task.</string>
+    <string name="Manage_NoServices">No Service Found.</string>
+    <string name="Portfolio_NoDesign">No Sample Design</string>
+
+    <string name="Review_NoReview">Sorry. There is no review.</string>
+    <string name="Services_NoService">Oops. No relevant services found.</string>
+    <string name="Services_NoService2">Stay Tune.</string>
+
+    <string name="faq_title">FAQs</string>
+    <string name="support_title">Contact Us</string>
+
+    <string name="faq_General">General Information</string>
+    <string name="faq_GeneralDetail">All accounts on WeDo are both Buyer and Seller accounts by default.</string>
+    <string name="support_GeneralDetail2">Please email us if you have any query about the application.</string>
+    <string name="support_GeneralDetail4">We will reply within 2 working days.</string>
+    <string name="support_GeneralDetail3">wedopup@gmail.com</string>
+
+    <string name="faq_buyer">Buyer</string>
+    <string name="faq_buyer1">Browsing Services</string>
+    <string name="faq_buyerQue1">What kind of listings are found on WeDo?</string>
+    <string name="faq_buyerAns1"><br>WeDo offers a wide range of professional bridal services in 7 main categories, namely Hair and Makeup, Dress Tailoring, Car, Venue, Flowers, Audio/Video, and Catering.\n</br>
+    <br>\n</br><br>You can find any professional services related to these 7 main categories on our platform. </br>
+    </string>
+    <string name="faq_buyerQue2">How do I find a service?</string>
+    <string name="faq_buyerAns2"><br>You can browse and explore various services through categories at the home page.\n</br>
+    <br>\n</br><br>You can also search using keywords by tapping on the search bar at each category page to find any related services on that category.</br>
+    </string>
+
+    <string name="faq_buyerQue3">Where do I find the lowest price services?</string>
+    <string name="faq_buyerAns3"><br>You can find lowest price services in WeDo under the ‘Lowest Price’ Section of the home page.\n</br>
+    <br>\n</br><br>The listings are showing all the services that equal or lower than 5000PHP.</br>
+    </string>
+
+    <string name="faq_buyerQue4">How do I find my recently viewed services?</string>
+    <string name="faq_buyerAns4"><br>You can find all the services that recently viewed through the home page under the ‘Recently Viewed’ section.\n</br>
+    <br>\n</br><br>It only will show the 10 latest recently viewed services.</br>
+    </string>
+
+    <string name="faq_buyer2">Project Posting</string>
+
+    <string name="faq_buyerQue5">What is Project Posting?</string>
+    <string name="faq_buyerAns5"><br>Our Project Posting feature aims to help the client (buyer) to find the professional services they require.\n</br>
+    <br>\n</br><br>Instead of spending time sifting through the available services, you can submit details of your service requirements and allow the freelancer to contact you.\n</br>
+    <br>\n</br><br>If your project meets the criteria of the service provider(seller), the service provider will contact you through the chat.</br>
+    </string>
+
+    <string name="faq_buyerQue6">How do I post a Project?</string>
+    <string name="faq_buyerAns6"><br>You may tab on ‘Post Project’ at buyer account to start posting your project.\n</br>
+    <br>\n</br><br>You need to fill up the Project Title, Description, Budget and Target Date.\n</br>
+    <br>\n</br><br>At the same time, you also need to select the correct category of your project and lastly choose the status as ‘Open’.\n</br>
+    <br>\n</br><br>Once you successfully find a service provider for your project, you may update the status to ‘Closed’.\n</br>
+    <br>\n</br><br>Only the project in ‘Open’ status able to be seen by the service provider(seller).</br>
+    </string>
+
+    <string name="faq_buyerQue7">How do I manage my Project Post?</string>
+
+    <string name="faq_buyerAns7"><br>You can update all the information of your project, including the Project Title, Description, Budget, Category, Target Date and Status.\n</br>
+    <br>\n</br><br>You may update the status to Closed as you find a suitable service provider for your project.\n</br>
+    <br>\n</br><br>At the same time, you also need to select the correct category of your project and lastly choose the status as ‘Open’.\n</br>
+    <br>\n</br><br>You may also can update the status to Completed as your own record once your project is fully completed.\n</br>
+    <br>\n</br><br>If you would like to remove your Project Post, select the relevant service you want to delete and click the ‘Delete’ button.</br>
+    </string>
+
+    <string name="faq_buyer3">Payment</string>
+    <string name="faq_buyerQue8">What kind of the payment method provided?</string>
+
+    <string name="faq_buyerAns8"><br>All the payment information has been included on the checkout page.\n</br>
+    <br>\n</br><br>However, you need to discuss with the service provider(seller) before make any payment for the services to avoid any inconvenience caused.</br>
+
+    </string>
+
+    <string name="faq_buyerQue9">How do I process the payment?</string>
+
+    <string name="faq_buyerAns9"><br>There are two ways of the payment process on WeDo.\n</br>
+    <br>\n</br><br>First, the payment only needs to be transferred after your project have been done by the service provider. You need to send the payment slip privately through the chat.\n</br>
+    <br>\n</br><br>Second, the half or full payment needs to be transferred to the service provider before your order can be proceed.\n</br>
+    <br>\n</br><br>You need to send the payment slip during your order checkout and then inform the service provider for order confirmed. Select “Choose File” and select your payment slip to submit your payment.\n</br>
+    </string>
+
+    <string name="faq_buyer4">Manage Orders</string>
+    <string name="faq_buyerQue10">What does the Order Status mean?</string>
+
+    <string name="faq_buyerAns10"><br>Pending: Waiting for the seller to accept your order.\n</br>
+    <br>\n</br><br>Work In Progress: The seller is working on your order.\n</br>
+    <br>\n</br><br>Completed: You have confirmed the order and need to transfer the payment to service provider (if relevant).\n</br>
+    <br>\n</br><br>Rated: You have rated the services.</br>
+
+    </string>
+
+    <string name="faq_buyerQue11">How do I change my Order Status?</string>
+
+    <string name="faq_buyerAns11"><br>You only can change the status on Work In Progress Order and Completed Order.\n</br>
+    <br>\n</br><br>Select the Work In Progress List, then click the button “Completed” to change the status from Work In Progress to Completed.\n</br>
+    <br>\n</br><br>Select the Completed List, and you can rate the order that have been completed.</br>
+    </string>
+
+    <string name="faq_seller">Service Provider</string>
+    <string name="faq_seller1">Services Listing</string>
+    <string name="faq_sellerQue1">How to promote my services in WeDo platform?</string>
+
+    <string name="faq_sellerAns1"><br>If you are a service provider, you can publish your own professional service to WeDo platform.\n</br>
+    <br>\n</br><br>You need to fill up all the necessary information, such as the Service Title, Description, Category, Price and Delivery Hours.\n</br>
+    <br>\n</br><br>You also need to select a photo as your service’s cover photo.\n</br>
+    <br>\n</br><br>You can add the portfolio for every service (if applicable) after you successfully publish your service.</br>
+    </string>
+
+    <string name="faq_seller2">Manage Services</string>
+    <string name="faq_sellerQue2">How do I edit my services?</string>
+
+    <string name="faq_sellerAns2"><br>You can edit the services by clicking the button “Manage Services” at service provider account.\n</br>
+    <br>\n</br><br>Inside the “Manage Services”, 4 activities can be done.</br>
+    <br>\n</br><br>1. You can directly click on the service to view the detail. If want to delete the service, you can click on “Delete” button inside the detail page.\n</br>
+    <br>\n</br><br>2. You can add/edit the portfolio for each service.\n</br>
+    <br>\n</br><br>3. You can edit the service information, such as Title, Description, Category, Price, Delivery Days and Cover Photo.\n</br>
+    <br>\n</br><br>4. You can view all the reviews given by buyer for each of the service.</br>
+    </string>
+
+    <string name="faq_seller3">Job Browsing</string>
+    <string name="faq_sellerQue3">Can I find the freelance job directly through WeDo platform?</string>
+
+    <string name="faq_sellerAns3"><br>Instead of Service Posting, you can also find a job through the job browsing.\n</br>
+    <br>\n</br><br>You can view all the project that posted by the buyer at the seller home page.\n</br>
+    <br>\n</br><br>If the project is fulfill your criteria, then you may contact privately through the chat feature to have the discussion with the client.</br>
+    </string>
+
+
+    <string name="faq_seller4">Payment</string>
+    <string name="faq_sellerQue4">How do I receive the payment from the buyer?</string>
+
+    <string name="faq_sellerAns4"><br>You need to add your own bank information for the payment purpose.\n</br>
+    <br>\n</br><br>Only one bank account can be added for each seller account.\n</br>
+    <br>\n</br><br>However, you can edit the bank information, such as Bank Name, Account Name and Account Number.\n</br>
+    <br>\n</br><br>All the bank information needs to be valid, so that the buyer can make the payment successfully.</br>
+    </string>
+
+    <string name="Payment_NoPaymentSlip">No payment slip has been uploaded.</string>
+
+    <string name="hyperlink1">Read the full <a href="https://wedogr10.github.io/conditions/termsconditions.html">Terms and Conditions</a></string>
+    <string name="hyperlink2">Read the full <a href="https://wedogr10.github.io/conditions/privacyterms.html">Privacy Policy</a></string>
+
+    <string name="text_terms_conditions_link">Read our full
+        <a href="https://wedogr10.github.io/conditions/termsconditions.html">
+        target="_top">Terms and Conditions</a></string>
+    <string name="text_privacy_conditions_link">Read our full
+        <a href="https://wedogr10.github.io/conditions/privacyterms.html">
+        target="_top">Privacy Policy</a></string>
+
+    <string name="TermsAndConditions">
+    <br>END USER LICENSE AGREEMENT \n\n</br>
+<br>        Last updated January 08, 2023 \n</br>
+<br>WeDo is licensed to You (End User) by WeDo, located and registered at Sta. Mesa, Manila, Philippines (Licensor), for use only under the terms of this License Agreement.\n</br>
+<br>By downloading the Licensed Application from Google software distribution platform (Play Store), and any update thereto (as permitted by this License Agreement) \n</br>
+<br>You indicate that You agree to be bound by all of the terms and conditions of this License Agreement, and that You accept this License Agreement. Play Store is referred to in this License Agreement as Services \n</br>
+    <!--
+<br>The parties of this License Agreement acknowledge that the Services are not a Party to this License Agreement and    \n</br>
+<br>are not bound by any provisions or obligations with regard to the Licensed Application, such as warranty, liability, \n</br>   
+<br>maintenance and support thereof. WeDo, not the Services, is solely responsible for the Licensed Application and the  \n</br>   
+<br>content thereof.                                                                                                     \n</br>   
+<br>This License Agreement may not provide for usage rules for the Licensed Application that are in conflict with the    \n</br>   
+<br>latest Google Play Terms of Service (Usage Rules). WeDo acknowledges that it had the opportunity to review the     \n</br>
+<br>Usage Rules and this License Agreement is not conflicting with them.                                                 \n</br>   
+<br>WeDo when purchased or downloaded through the Services, is licensed to You for use only under the terms of this      \n</br>   
+<br>License Agreement. The Licensor reserves all rights not expressly granted to You. WeDo is to be used on devices      \n</br>   
+<br>that operate with Google's operating system (Android).                                                             \n</br>
+<br>TABLE OF CONTENTS                                                                                                    \n</br>   
+<br>1. THE APPLICATION                                                                                                   \n</br>   
+<br>2. SCOPE OF LICENSE                                                                                                  \n</br>   
+<br>3. TECHNICAL REQUIREMENTS                                                                                            \n</br>   
+<br>4. MAINTENANCE AND SUPPORT                                                                                           \n</br>   
+<br>5. USE OF DATA                                                                                                       \n</br>   
+<br>6. USER-GENERATED CONTRIBUTIONS                                                                                      \n</br>   
+<br>7. CONTRIBUTION LICENSE                                                                                              \n</br>   
+<br>8. LIABILITY                                                                                                         \n</br>   
+<br>9. WARRANTY                                                                                                          \n</br>   
+<br>10. PRODUCT CLAIMS                                                                                                   \n</br>   
+<br>11. LEGAL COMPLIANCE                                                                                                 \n</br>   
+<br>12. CONTACT INFORMATION                                                                                              \n</br>   
+<br>13. TERMINATION                                                                                                      \n</br>   
+<br>14. THIRD-PARTY TERMS OF AGREEMENTS AND BENEFICIARY                                                                  \n</br>   
+<br>15. INTELLECTUAL PROPERTY RIGHTS                                                                                     \n</br>   
+<br>16. APPLICABLE LAW                                                                                                   \n</br>   
+<br>17. MISCELLANEOUS                                                                                                    \n</br>
+<br>1. THE APPLICATION \n</br>
+<br>WeDo (Licensed Application) is a piece of software created to facilitate wedding services booking via an android\n</br>
+<br>phone — and customized for Android mobile devices (Devices). It is used to users and service providers to book\n</br>
+<br>and provide bridal services through a mobile application.\n</br>
+<br>2. SCOPE OF LICENSE\n</br>
+<br>2.1 You are given a non-transferable, non-exclusive, non-sublicensable license to install and use the Licensed\n</br>
+<br>Application on any Devices that You (End-User) own or control and as permitted by the Usage Rules, with the\n</br>
+<br>exception that such Licensed Application may be accessed and used by other accounts associated with You (EndUser, The Purchaser) via Family Sharing or volume purchasing.\n</br>
+<br>2.2 This license will also govern any updates of the Licensed Application provided by Licensor that replace, repair,\n</br>
+<br>and/or supplement the first Licensed Application, unless a separate license is provided for such update, in which\n</br>
+<br>case the terms of that new license will govern.\n</br>
+<br>2.3 You may not share or make the Licensed Application available to third parties (unless to the degree allowed by\n</br>
+<br>the Usage Rules, and with WeDo's prior written consent), sell, rent, lend, lease or otherwise redistribute the Licensed\n</br>
+<br>Application.\n</br>
+<br>2.4 You may not reverse engineer, translate, disassemble, integrate, decompile, remove, modify, combine, create\n</br>
+<br>derivative works or updates of, adapt, or attempt to derive the source code of the Licensed Application, or any part\n</br>
+<br>thereof (except with WeDo's prior written consent).\n</br>
+<br>2.5 You may not copy (excluding when expressly authorized by this license and the Usage Rules) or alter the\n</br>
+<br>Licensed Application or portions thereof. You may create and store copies only on devices that You own or control for\n</br>
+<br>backup keeping under the terms of this license, the Usage Rules, and any other terms and conditions that apply to\n</br>
+<br>the device or software used. You may not remove any intellectual property notices. You acknowledge that no\n</br>
+<br>unauthorized third parties may gain access to these copies at any time. If you sell your Devices to a third party, you\n</br>
+<br>must remove the Licensed Application from the Devices before doing so.\n</br>
+<br>2.6 Violations of the obligations mentioned above, as well as the attempt of such infringement, may be subject to\n</br>
+<br>prosecution and damages.\n</br>
+<br>2.7 Licensor reserves the right to modify the terms and conditions of licensing.\n</br>
+<br>2.8 Nothing in this license should be interpreted to restrict third-party terms. When using the Licensed Application,\n</br>
+<br>You must ensure that You comply with applicable third-party terms and conditions.\n</br>
+<br>3. TECHNICAL REQUIREMENTS\n</br>
+<br>3.1 Licensor attempts to keep the Licensed Application updated so that it complies with modified/new versions of the\n</br>
+<br>firmware and new hardware. You are not granted rights to claim such an update.\n</br>
+<br>3.2 You acknowledge that it is Your responsibility to confirm and determine that the app end-user device on which\n</br>
+<br>You intend to use the Licensed Application satisfies the technical specifications mentioned above.\n</br>
+<br>3.3 Licensor reserves the right to modify the technical specifications as it sees appropriate at any time.\n</br>
+<br>4. MAINTENANCE AND SUPPORT \n</br>
+<br>4.1 The Licensor is solely responsible for providing any maintenance and support services for this Licensed\n</br>
+<br>Application. You can reach the Licensor at the email address listed in the Play Store Overview for this Licensed\n</br>
+<br>Application.\n</br>
+<br>4.2 WeDo and the End-User acknowledge that the Services have no obligation whatsoever to furnish any\n</br>
+<br>maintenance and support services with respect to the Licensed Application.\n</br>
+<br>5. USE OF DATA\n</br>
+<br>You acknowledge that Licensor will be able to access and adjust Your downloaded Licensed Application content and\n</br>
+<br>Your personal information, and that Licensor's use of such material and information is subject to Your legal\n</br>
+<br>agreements with Licensor and Licensor's privacy policy, which can be found at the bottom of the Licensed\n</br>
+<br>Application.\n</br>
+<br>You acknowledge that the Licensor may periodically collect and use technical data and related information about\n</br>
+<br>your device, system, and application software, and peripherals, offer product support, facilitate the software updat\n</br>
+<br>and for purposes of providing other services to you (if any) related to the Licensed Application. Licensor may also\n</br>
+<br>use this information to improve its products or to provide services or technologies to you, as long as it is in a fo\n</br>
+<br>that does not personally identify you.\n</br>
+<br>6. USER-GENERATED CONTRIBUTIONS\n</br>
+<br>The Licensed Application may invite you to chat, contribute to, or participate in blogs, message boards, online\n</br>
+<br>forums, and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit\n</br>
+<br>perform, publish, distribute, or broadcast content and materials to us or in the Licensed Application, including but\n</br>
+<br>limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or\n</br>
+<br>other material (collectively, "Contributions"). Contributions may be viewable by other users of the Licensed\n</br>
+<br>Application and through third-party websites or applications. As such, any Contributions you transmit may be treated\n</br>
+<br>as non-confidential and non-proprietary. When you create or make available any Contributions, you thereby\n</br>
+<br>represent and warrant that:\n</br>
+<br>1. The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or\n</br>
+<br>copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the\n</br>
+<br>copyright, patent, trademark, trade secret, or moral rights of any third party.\n</br>
+<br>2. You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions\n</br>
+<br>to use and to authorize us, the Licensed Application, and other users of the Licensed Application to use your\n</br>
+<br>Contributions in any manner contemplated by the Licensed Application and this License Agreement.\n</br>
+<br>3. You have the written consent, release, and/or permission of each and every identifiable individual person in\n</br>
+<br>your Contributions to use the name or likeness or each and every such identifiable individual person to enable\n</br>
+<br>inclusion and use of your Contributions in any manner contemplated by the Licensed Application and this License\n</br>
+<br>Agreement.\n</br>
+<br>4. Your Contributions are not false, inaccurate, or misleading.\n</br>
+<br>5. Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes,\n</br>
+<br>chain letters, spam, mass mailings, or other forms of solicitation.\n</br>
+<br>6. Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or\n</br>
+<br>otherwise objectionable (as determined by us).\n</br>
+<br>7. Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.\n</br>
+<br>8. Your Contributions are not used to harass or threaten (in the legal sense of those terms) any other person and         \n</br>
+<br>to promote violence against a specific person or class of people.                                                         \n</br>
+<br>9. Your Contributions do not violate any applicable law, regulation, or rule.                                             \n</br>
+<br>10. Your Contributions do not violate the privacy or publicity rights of any third party.                                 \n</br>
+<br>11. Your Contributions do not violate any applicable law concerning child pornography, or otherwise intended to           \n</br>
+<br>protect the health or well-being of minors.                                                                               \n</br>
+<br>12. Your Contributions do not include any offensive comments that are connected to race, national origin, gender,         \n</br>
+<br>sexual preference, or physical handicap.                                                                                  \n</br>
+<br>13. Your Contributions do not otherwise violate, or link to material that violates, any provision of this License         \n</br>
+<br>Agreement, or any applicable law or regulation.                                                                           \n</br>
+<br>Any use of the Licensed Application in violation of the foregoing violates this License Agreement and may result in,      \n</br>
+<br>among other things, termination or suspension of your rights to use the Licensed Application.                             \n</br>
+<br>7. CONTRIBUTION LICENSE                                                                                                   \n</br>
+<br>By posting your Contributions to any part of the Licensed Application or making Contributions accessible to the           \n</br>
+<br>Licensed Application by linking your account from the Licensed Application to any of your social networking               \n</br>
+<br>accounts, you automatically grant, and you represent and warrant that you have the right to grant, to us an               \n</br>
+<br>unrestricted, unlimited, irrevocable, perpetual, non-exclusive, transferable, royalty-free, fully-paid, worldwide right,  \n</br>
+<br>and license to host, use copy, reproduce, disclose, sell, resell, publish, broad cast, retitle, archive, store, cache,    \n</br>
+<br>publicly display, reformat, translate, transmit, excerpt (in whole or in part), and distribute such Contributions         \n</br>
+<br>(including, without limitation, your image and voice) for any purpose, commercial advertising, or otherwise, and to       \n</br>
+<br>prepare derivative works of, or incorporate in other works, such as Contributions, and grant and authorize                \n</br>
+<br>sublicenses of the foregoing. The use and distribution may occur in any media formats and through any media               \n</br>
+<br>channels.                                                                                                                 \n</br>
+<br>This license will apply to any form, media, or technology now known or hereafter developed, and includes our use of       \n</br>
+<br>your name, company name, and franchise name, as applicable, and any of the trademarks, service marks, trade               \n</br>
+<br>names, logos, and personal and commercial images you provide. You waive all moral rights in your Contributions,           \n</br>
+<br>and you warrant that moral rights have not otherwise been asserted in your Contributions.                                 \n</br>
+<br>We do not assert any ownership over your Contributions. You retain full ownership of all of your Contributions and        \n</br>
+<br>any intellectual property rights or other proprietary rights associated with your Contributions. We are not liable for any\n</br>
+<br>statements or representations in your Contributions provided by you in any area in the Licensed Application. You are      \n</br>
+<br>solely responsible for your Contributions to the Licensed Application and you expressly agree to exonerate us from        \n</br>
+<br>any and all responsibility and to refrain from any legal action against us regarding your Contributions.                  \n</br>
+<br>We have the right, in our sole and absolute discretion, (1) to edit, redact, or otherwise change any Contributions; (2)   \n</br>
+<br>to recategorize any Contributions to place them in more appropriate locations in the Licensed Application; and (3) to     \n</br>
+<br>prescreen or delete any Contributions at any time and for any reason, without notice. We have no obligation to            \n</br>
+<br>monitor your Contributions.                                                                                               \n</br>
+<br>8. LIABILITY                                                                                                              \n</br>
+<br>8.1 Licensor's responsibility in the case of violation of obligations and tort shall be limited to intent and gross\n</br>
+<br>negligence. Only in case of a breach of essential contractual duties (cardinal obligations), Licensor shall also be\n</br>
+<br>liable in case of slight negligence. In any case, liability shall be limited to the foreseeable, contractually typical\n</br>
+<br>damages. The limitation mentioned above does not apply to injuries to life, limb, or health.\n</br>
+<br>8.2 Licensor takes no accountability or responsibility for any damages caused due to a breach of duties according to\n</br>
+<br>Section 2 of this License Agreement. To avoid data loss, You are required to make use of backup functions of the\n</br>
+<br>Licensed Application to the extent allowed by applicable third-party terms and conditions of use. You are aware that\n</br>
+<br>in case of alterations or manipulations of the Licensed Application, You will not have access to the Licensed\n</br>
+<br>Application.\n</br>
+<br>8.3 Licensor takes no accountability and responsibility in case of user scamming another user.\n</br>
+<br>9. WARRANTY\n</br>
+<br>9.1 Licensor warrants that the Licensed Application is free of spyware, trojan horses, viruses, or any other malware\n</br>
+<br>at the time of Your download. Licensor warrants that the Licensed Application works as described in the user\n</br>
+<br>documentation.\n</br>
+<br>9.2 No warranty is provided for the Licensed Application that is not executable on the device, that has been\n</br>
+<br>unauthorizedly modified, handled inappropriately or culpably, combined or installed with inappropriate hardware or\n</br>
+<br>software, used with inappropriate accessories, regardless if by Yourself or by third parties, or if there are any other\n</br>
+<br>reasons outside of WeDo's sphere of influence that affect the executability of the Licensed Application.\n</br>
+<br>9.3 You are required to inspect the Licensed Application immediately after installing it and notify WeDo about issues\n</br>
+<br>discovered without delay by email provided in Contact Information. The defect report will be taken into consideration\n</br>
+<br>and further investigated if it has been emailed within a period of thirty (30) days after discovery.\n</br>
+<br>9.4 If we confirm that the Licensed Application is defective, WeDo reserves a choice to remedy the situation either\n</br>
+<br>by means of solving the defect or substitute delivery.\n</br>
+<br>9.5 In the event of any failure of the Licensed Application to conform to any applicable warranty, You may notify the\n</br>
+<br>Services Store Operator, and Your Licensed Application purchase price will be refunded to You. To the maximum\n</br>
+<br>extent permitted by applicable law, the Services Store Operator will have no other warranty obligation whatsoever\n</br>
+<br>with respect to the Licensed Application, and any other losses, claims, damages, liabilities, expenses, and costs\n</br>
+<br>attributable to any negligence to adhere to any warranty.\n</br>
+<br>9.6 If the user is an entrepreneur, any claim based on faults expires after a statutory period of limitation amounting\n</br>
+<br>to twelve (12) months after the Licensed Application was made available to the user. The statutory periods of\n</br>
+<br>limitation given by law apply for users who are consumers.\n</br>
+<br>10. PRODUCT CLAIMS\n</br>
+<br>WeDo and the End-User acknowledge that WeDo, and not the Services, is responsible for addressing any claims of\n</br>
+<br>the End-User or any third party relating to the Licensed Application or the End-User’s possession and/or use of that\n</br>
+<br>Licensed Application, including, but not limited to:\n</br>
+<br>(i) product liability claims;\n</br>
+<br>(ii) any claim that the Licensed Application fails to conform to any applicable legal or regulatory requirement; and\n</br>
+<br>(iii) claims arising under consumer protection, privacy, or similar legislation.        \n</br>
+<br>11. LEGAL COMPLIANCE\n</br>
+<br>You represent and warrant that You are not located in a country that is subject to a US Government embargo, or that\n</br>
+<br>has been designated by the US Government as a "terrorist supporting" country; and that You are not listed on any\n</br>
+<br>US Government list of prohibited or restricted parties.\n</br>
+<br>12. CONTACT INFORMATION\n</br>
+<br>For general inquiries, complaints, questions or claims concerning the Licensed Application, please contact:\n</br>
+<br>WeDo PUP\n</br>
+<br>Sta. Mesa\n</br>
+<br>Manila,\n</br>
+<br>Philippines\n</br>
+<br>wedopup@gmail.com\n</br>
+<br>13. TERMINATION\n</br>
+<br>The license is valid until terminated by WeDo or by You. Your rights under this license will terminate automatically\n</br>
+<br>and without notice from WeDo if You fail to adhere to any term(s) of this license. Upon License termination, You shall\n</br>
+<br>stop all use of the Licensed Application, and destroy all copies, full or partial, of the Licensed Application.\n</br>
+<br>14. THIRD-PARTY TERMS OF AGREEMENTS AND BENEFICIARY\n</br>
+<br>WeDo represents and warrants that WeDo will comply with applicable third-party terms of agreement when using\n</br>
+<br>Licensed Application.\n</br>
+<br>In Accordance with Section 9 of the "Instructions for Minimum Terms of Developer's End-User License Agreement,"\n</br>
+<br>Google's subsidiaries shall be third-party beneficiaries of this End User License Agreement and — upon Your\n</br>
+<br>acceptance of the terms and conditions of this License Agreement, Google will have the right (and will be deemed to\n</br>
+<br>have accepted the right) to enforce this End User License Agreement against You as a third-party beneficiary\n</br>
+<br>thereof.\n</br>
+<br>15. INTELLECTUAL PROPERTY RIGHTS\n</br>
+<br>WeDo and the End-User acknowledge that, in the event of any third-party claim that the Licensed Application or the\n</br>
+<br>End-User's possession and use of that Licensed Application infringes on the third party's intellectual property rights,\n</br>
+<br>WeDo, and not the Services, will be solely responsible for the investigation, defense, settlement, and discharge or\n</br>
+<br>any such intellectual property infringement claims.\n</br>
+<br>16. APPLICABLE LAW\n</br>
+<br>This License Agreement is governed by the laws of the Philippines excluding its conflicts of law rules.\n</br>
+<br>17. MISCELLANEOUS\n</br>
+<br>17.1 If any of the terms of this agreement should be or become invalid, the validity of the remaining provisions shall\n</br>
+<br>not be affected. Invalid terms will be replaced by valid ones formulated in a way that will achieve the primary\n</br>
+<br>purpose.\n</br>
+<br>17.2 Collateral agreements, changes and amendments are only valid if laid down in writing. The preceding clause\n</br>
+<br>can only be waived in writing.\n</br>
+This EULA was created using Termly's EULA Generator.
+    -->
+    </string>
+
+
+<string name="PrivacyConditions">
+    <br>PRIVACY NOTICE \n\n</br>
+<br>       Last updated January 08, 2023      \n</br>
+<br>This privacy notice for WeDo (Company, we, us, or our), describes how and why we might collect, store, use, and/or share (process) your information when you use our services (Services), such as when you Download and use our mobile application (WeDo), or any other application of ours that links to this privacy notice\n</br>
+<br>Engage with us in other related ways, including any sales, marketing, or events \n</br>
+    <!--
+<br>Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at wedopup@gmail.com.\n</br>
+<br>\n</br>
+<br>SUMMARY OF KEY POINTS\n</br>
+<br>\n</br>
+<br>This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. You can also click here to go directly to our table of contents.\n</br>
+<br>What personal information do we process? When you visit, use, or navigate our Services, we may process personal information depending on how you interact with WeDo and the Services, the choices you make, and the products and features you use. Click here to learn more. \n</br>
+<br>Do we process any sensitive personal information? We may process sensitive personal information when necessary with your consent or as otherwise permitted by applicable law. Click here to learn more. \n</br>
+<br>Do we receive any information from third parties? We do not receive any information from third parties.\n</br>
+<br>How do we process your information? We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click here to learn more.  \n</br>
+<br>In what situations and with which parties do we share personal information? We may share information in specific situations and with specific third parties. Click here to learn more.   \n</br>
+<br>How do we keep your information safe? We have organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Click here to learn more.\n</br>
+<br>What are your rights? Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Click here to learn more.     \n</br>
+<br>How do you exercise your rights? The easiest way to exercise your rights is by filling out our data subject request form available here, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws. \n</br>
+<br>Want to learn more about what WeDo does with any information we collect? Click here to review the notice in full.\n</br>
+<br>\n</br>
+<br>TABLE OF CONTENTS\n</br>
+<br>                                                                       \n</br>
+<br>1. WHAT INFORMATION DO WE COLLECT?                                     \n</br>
+<br>2. HOW DO WE PROCESS YOUR INFORMATION?                                 \n</br>
+<br>3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?           \n</br>
+<br>4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?                                \n</br>
+<br>5. HOW LONG DO WE KEEP YOUR INFORMATION?                               \n</br>
+<br>6. HOW DO WE KEEP YOUR INFORMATION SAFE?                               \n</br>
+<br>7. DO WE COLLECT INFORMATION FROM MINORS?                              \n</br>
+<br>8. WHAT ARE YOUR PRIVACY RIGHTS?                                       \n</br>
+<br>9. CONTROLS FOR DO-NOT-TRACK FEATURES                                  \n</br>
+<br>10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?              \n</br>
+<br>11. DO WE MAKE UPDATES TO THIS NOTICE?                                 \n</br>
+<br>12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?                          \n</br>
+<br>13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?\n</br>
+<br>                                                                       \n</br>
+<br>                                                                       \n</br>
+<br>1. WHAT INFORMATION DO WE COLLECT?                                     \n</br>
+<br>Personal information you disclose to us                                \n</br>
+<br>In Short: We collect personal information that you provide to us.      \n</br>
+<br>We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.\n</br>
+<br>\n</br>
+<br>Personal Information Provided by You. The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:\n</br>
+<br>names            \n</br>
+<br>email addresses  \n</br>
+<br>passwords        \n</br>
+<br>job titles       \n</br>
+<br>mailing addresses\n</br>
+<br>phone numbers    \n</br>
+<br>Sensitive Information. When necessary, with your consent or as otherwise permitted by applicable law, we process the following categories of sensitive information:\n</br>
+<br>services data\n</br>
+<br>basic user data\n</br>
+<br>Social Media Login Data. We may provide you with the option to register with us using your existing social media account details, like your Facebook, Twitter, or other social media account. If you choose to register in this way, we will collect the information described in the section called "HOW DO WE HANDLE YOUR SOCIAL LOGINS?" below.\n</br>
+<br>\n</br>
+<br>Application Data. If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:\n</br>
+<br>Mobile Device Access. We may request access or permission to certain features from your mobile device, including your mobile device's camera, gallery, storage, and other features. If you wish to change our access or permissions, you may do so in your device's settings.\n</br>
+<br>Push Notifications. We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device's settings.\n</br>
+<br>This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.\n</br>
+<br>\n</br>
+<br>All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.\n</br>
+<br>\n</br>
+<br>2. HOW DO WE PROCESS YOUR INFORMATION?\n</br>
+<br>\n</br>
+<br>In Short: We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.\n</br>
+<br>\n</br>
+<br>We process your personal information for a variety of reasons, depending on how you interact with our Services, including:\n</br>
+<br>To facilitate account creation and authentication and otherwise manage user accounts. We may process your information so you can create and log in to your account, as well as keep your account in working order.\n</br>
+<br>To deliver and facilitate delivery of services to the user. We may process your information to provide you with the requested service.\n</br>
+<br>To respond to user inquiries/offer support to users. We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.\n</br>
+<br>To fulfill and manage your orders. We may process your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.\n</br>
+<br>\n</br>
+<br>To enable user-to-user communications. We may process your information if you choose to use any of our offerings that allow for communication with another user.\n</br>
+<br>\n</br>
+<br>\n</br>
+<br>To request feedback. We may process your information when necessary to request feedback and to contact you about your use of our Services.\n</br>
+<br>\n</br>
+<br>3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?\n</br>
+<br>\n</br>
+<br>In Short: We may share information in specific situations described in this section and/or with the following third parties.\n</br>
+<br>\n</br>
+<br>We may need to share your personal information in the following situations:\n</br>
+<br>Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.\n</br>
+<br>Other Users. When you share personal information (for example, by posting comments, contributions, or other content to the Services) or otherwise interact with public areas of the Services, such personal information may be viewed by all users and may be publicly made available outside the Services in perpetuity. If you interact with other users of our Services and register for our Services through a social network (such as Facebook), your contacts on the social network will see your name, profile photo, and descriptions of your activity. Similarly, other users will be able to view descriptions of your activity, communicate with you within our Services, and view your profile.\n</br>
+<br>\n</br>
+<br>4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?\n</br>
+<br>\n</br>
+<br>In Short: If you choose to register or log in to our Services using a social media account, we may have access to certain information about you.\n</br>
+<br>\n</br>
+<br>Our Services offer you the ability to register and log in using your third-party social media account details (like your Facebook or Twitter logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile information we receive may vary depending on the social media provider concerned, but will often include your name, email address, friends list, and profile picture, as well as other information you choose to make public on such a social media platform.\n</br>
+<br>\n</br>
+<br>We will use the information we receive only for the purposes that are described in this privacy notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. We recommend that you review their privacy notice to understand how they collect, use, and share your personal information, and how you can set your privacy preferences on their sites and apps.\n</br>
+<br>\n</br>
+<br>5. HOW LONG DO WE KEEP YOUR INFORMATION?\n</br>
+<br>\n</br>
+<br>In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.\n</br>
+<br>\n</br>
+<br>We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than three (3) months past the start of the idle period of the user's account.\n</br>
+<br>\n</br>
+<br>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.\n</br>
+<br>\n</br>
+<br>6. HOW DO WE KEEP YOUR INFORMATION SAFE?\n</br>
+<br>\n</br>
+<br>In Short: We aim to protect your personal information through a system of organizational and technical security measures.\n</br>
+<br>\n</br>
+<br>We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.\n</br>
+<br>\n</br>
+<br>7. DO WE COLLECT INFORMATION FROM MINORS?\n</br>
+<br>\n</br>
+<br>In Short: We do not knowingly collect data from or market to children under 18 years of age.\n</br>
+<br>\n</br>
+<br>We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at wedopup@gmail.com.\n</br>
+<br>\n</br>
+<br>8. WHAT ARE YOUR PRIVACY RIGHTS?\n</br>
+<br>\n</br>
+<br>In Short:  You may review, change, or terminate your account at any time.\n</br>
+<br> \n</br>
+<br>If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm.\n</br>
+<br>\n</br>
+<br>If you are located in Switzerland, the contact details for the data protection authorities are available here: https://www.edoeb.admin.ch/edoeb/en/home.html.\n</br>
+<br>\n</br>
+<br>Withdrawing your consent: If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" below.\n</br>
+<br>\n</br>
+<br>However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.\n</br>
+<br>\n</br>
+<br>Account Information\n</br>
+<br>\n</br>
+<br>If you would at any time like to review or change the information in your account or terminate your account, you can:\n</br>
+<br>Log in to your account settings and update your user account.\n</br>
+<br>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.\n</br>
+<br>\n</br>
+<br>If you have questions or comments about your privacy rights, you may email us at wedopup@gmail.com.\n</br>
+<br>\n</br>
+<br>9. CONTROLS FOR DO-NOT-TRACK FEATURES\n</br>
+<br>\n</br>
+<br>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (DNT) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.\n</br>
+<br>\n</br>
+<br>10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?\n</br>
+<br>\n</br>
+<br>In Short: Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.\n</br>
+<br>\n</br>
+<br>California Civil Code Section 1798.83, also known as the Shine The Light law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.\n</br>
+<br>\n</br>
+<br>If you are under 18 years of age, reside in California, and have a registered account with Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g., backups, etc.).\n</br>
+<br>\n</br>
+<br>11. DO WE MAKE UPDATES TO THIS NOTICE?\n</br>
+<br>\n</br>
+<br>In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.\n</br>
+<br>\n</br>
+<br>We may update this privacy notice from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.\n</br>
+<br>\n</br>
+<br>12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?\n</br>
+<br>\n</br>
+<br>If you have questions or comments about this notice, you may email us at wedopup@gmail.com or by post to:\n</br>
+<br>WeDo\n</br>
+<br>Sta.Mesa\n</br>
+<br>Manila\n</br>
+<br>Philippines\n</br>
+<br>13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?\n</br>
+<br>\n</br>
+<br>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please submit a request form by clicking here.\n</br>
+This privacy policy was created using Termly's Privacy Policy Generator.
+    -->
+</string>
+
+</resources>
